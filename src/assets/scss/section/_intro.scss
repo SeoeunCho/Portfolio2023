@@ -1,0 +1,174 @@
+.home-hero {
+  overflow: hidden;
+  padding-bottom: 2.1875rem;
+  padding-top: 30vh;
+  position: relative;
+
+  @media only screen and (min-width: 48rem) {
+    align-items: center;
+    display: flex;
+    padding-bottom: 12.5rem;
+    padding-top: 12.5rem;
+  }
+
+  @media only screen and (min-width: 77.5rem) {
+    min-height: 100vh;
+    padding-bottom: 8.75rem;
+    padding-top: 14.75rem;
+  }
+
+  .container {
+    width: 100%;
+
+    .home-hero__inner {
+      position: relative;
+
+      .home-hero__heading {
+        padding-bottom: max(2.5rem, min(2.589vw + 1.8932rem, 5rem));
+
+        .home-hero__heading-text {
+          &.heading-xl {
+            font-size: max(5.125rem, min(13.3333vw + 2rem, 18rem));
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 0.9;
+          }
+
+          > span {
+            display: flex;
+            width: 100%;
+
+            span {
+              display: block;
+
+              &.clip {
+                overflow: hidden;
+              }
+            }
+
+            &:last-child {
+              justify-content: flex-end;
+            }
+          }
+
+          .home-hero__frontend {
+            .o {
+              position: relative;
+
+              .home-hero__flair svg {
+                position: absolute;
+                top: -100px;
+                left: 15px;
+                width: 122px;
+              }
+            }
+          }
+        }
+      }
+
+      .home-hero__subtitle {
+        margin-bottom: 7.625rem;
+
+        @media only screen and (min-width: 48rem) {
+          margin-bottom: 0;
+        }
+
+        
+      }
+      .home-hero__button {
+        position: relative;
+        // visibility: hidden;
+        z-index: 2;
+
+        @media only screen and (min-width: 48rem) {
+          bottom: 16px;
+          position: absolute;
+          right: 0;
+        }
+
+        .get-gsap-btn {
+          position: relative;
+          z-index: 1;
+
+          .get-gsap-btn--stroke .get-gsap-btn__button {
+            background: linear-gradient(
+                  var(--theme-color-lt, var(--color-core-green-lt)),
+                  var(--theme-color-lt, var(--color-core-green-lt))
+                )
+                padding-box,
+              var(--color-just-black) border-box;
+          }
+
+          &.get-gsap-btn--fill {
+            color: var(--color-surface-white);
+          }
+
+          .get-gsap-btn__button {
+            background: linear-gradient(var(--theme-color-lt, var(--color-just-black)), var(--theme-color-lt, var(--color-just-black)))
+                padding-box,
+              var(--gradient-macha) border-box;
+
+            border: 0.125rem solid transparent;
+            min-width: 13.75rem;
+            overflow: hidden;
+            position: relative;
+            transition: none;
+            z-index: 1;
+
+            &.get-gsap-btn--stroke {
+              color: currentColor;
+            }
+
+            &:after {
+              display: none;
+            }
+
+            > span {
+              align-items: center;
+              display: flex;
+              line-height: 0;
+              position: relative;
+              z-index: 3;
+            }
+
+            .button__icon {
+              align-items: center;
+              background: 0 0;
+              border: 0.125rem solid;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              margin-left: 0.5rem;
+              overflow: hidden;
+              width: 24px;
+              height: 24px;
+
+              span {
+                display: grid;
+              }
+
+              svg {
+                grid-area: 1/1;
+                height: 11px;
+                width: 10px;
+              }
+
+              path {
+                fill: currentColor;
+              }
+            }
+
+            @media only screen and (min-width: 77.5rem) {
+              min-width: 17.125rem;
+
+              &:hover {
+                transform: none;
+                transition: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
