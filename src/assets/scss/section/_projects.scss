@@ -1,0 +1,40 @@
+.home-projects {
+  .container {
+    position: relative;
+    z-index: 2;
+
+    .heading-m {
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1;
+      font-size: max(4rem, min(1.16505vw + 3.72694rem, 5.125rem));
+    }
+
+    .home-projects__inner {
+      padding-bottom: max(4.5rem, min(11.8447vw + 1.72391rem, 15.9375rem));
+      padding-top: max(4rem, min(6.40777vw + 2.49818rem, 10.1875rem));
+      position: relative;
+
+      &:after {
+        background-color: var(--color-surface25);
+        bottom: 0;
+        content: "";
+        height: 0.0625rem;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+      &:before {
+        @media only screen and (min-width: 48rem) {
+          background-color: var(--color-surface25);
+          content: "";
+          height: 0.0625rem;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

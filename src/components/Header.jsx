@@ -120,13 +120,13 @@ const Header = () => {
                   </a>
                 </li>
                 <li className="header__menu-item">
-                  <a href="#career" className="header__menu-link">
-                    Career
+                  <a href="#projects" className="header__menu-link">
+                    Projects
                   </a>
                 </li>
                 <li className="header__menu-item">
-                  <a href="#projects" className="header__menu-link">
-                    Projects
+                  <a href="#career" className="header__menu-link">
+                    Career
                   </a>
                 </li>
                 <li className="header__menu-item">
