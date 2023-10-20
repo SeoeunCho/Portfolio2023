@@ -2,9 +2,9 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section id="skills" class="home-skills" data-block="home-skills">
-      <div class="container">
-        <div class="home-skills__inner">
+    <section id="skills" className="home-skills" data-block="home-skills">
+      <div className="container">
+        <div className="home-skills__inner">
           <div className="skills__wrap">
             <ul className="skills__panels grid">
               <li className="skills__panel col-12 col-tablet-6 col-desktop-3">

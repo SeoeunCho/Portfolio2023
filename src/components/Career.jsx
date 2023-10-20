@@ -2,9 +2,9 @@ import React from "react";
 
 const Career = () => {
   return (
-    <section id="career" class="home-career" data-block="home-career">
-      <div class="container">
-        <div class="home-career__inner">
+    <section id="career" className="home-career" data-block="home-career">
+      <div className="container">
+        <div className="home-career__inner">
           <div className="docs-hero__content">
             <div className="subtitle subtitle--small subtitle--left">
               <div className="subtitle__brace">
@@ -15,8 +15,8 @@ const Career = () => {
                   />
                 </svg>
               </div>
-              <p class="subtitle__label">A wildly robust JavaScript animation library built for professionals</p>
-              <div class="subtitle__brace">
+              <p className="subtitle__label">A wildly robust JavaScript animation library built for professionals</p>
+              <div className="subtitle__brace">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 27 78" aria-hidden="true">
                   <path
                     fill="#bbbaa6"

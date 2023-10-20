@@ -2,62 +2,62 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="footer">
+    <footer className="footer">
       <div className="footer-global">
-        <div class="container">
-          <nav class="grid" aria-label="Footer Navigation">
-            <div class="col-12 col-tablet-5">
-              <form class="footer-global__form">
+        <div className="container">
+          <nav className="grid" aria-label="Footer Navigation">
+            <div className="col-12 col-tablet-5">
+              <form className="footer-global__form">
                 <fieldset>
-                  <legend class="body-m">깃헙으로 오시면 더 많은 </legend>
-                  <div class="field footer-global__email">
-                    <label class="label visually-hidden" for="email">
-                      Email <span class="req">*</span>
+                  <legend className="body-m">깃헙으로 오시면 더 많은 </legend>
+                  <div className="field footer-global__email">
+                    <label className="label visually-hidden" htmlFor="email">
+                      Email <span className="req">*</span>
                     </label>
                     <input type="email" id="email" name="email" placeholder="Email Address" required />
-                    <button class="footer-global__button" type="submit" aria-label="Submit">
+                    <button className="footer-global__button" type="submit" aria-label="Submit">
                       <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path d="M40.002 11.001H0.501953M40.002 11.001L30.002 1.00098M40.002 11.001L30.002 21.001" stroke="#0E100F" />
                       </svg>
                     </button>
-                    <p class="js-email-feedback"></p>
+                    <p className="js-email-feedback"></p>
                   </div>
                 </fieldset>
               </form>
             </div>
-            <div class="col-12 col-tablet-6 col-desktop-5 col-tablet-start-7 col-desktop-start-8">
-              <div class="grid">
-                <div class="col-tablet-4 footer__nav-container">
-                  <h2 class="footer__label">Site Map</h2>
-                  <div class="footer__nav">
-                    <ul class="footer__menu">
-                      <li class="footer__menu-item">
-                        <a href="#intro" class="footer__menu-link" rel="noopener noreferrer">
+            <div className="col-12 col-tablet-6 col-desktop-5 col-tablet-start-7 col-desktop-start-8">
+              <div className="grid">
+                <div className="col-tablet-4 footer__nav-container">
+                  <h2 className="footer__label">Site Map</h2>
+                  <div className="footer__nav">
+                    <ul className="footer__menu">
+                      <li className="footer__menu-item">
+                        <a href="#intro" className="footer__menu-link" rel="noopener noreferrer">
                           Home
                         </a>
                       </li>
-                      <li class="footer__menu-item">
-                        <a href="#about" class="footer__menu-link" rel="noopener noreferrer">
+                      <li className="footer__menu-item">
+                        <a href="#about" className="footer__menu-link" rel="noopener noreferrer">
                           About
                         </a>
                       </li>
-                      <li class="footer__menu-item">
-                        <a href="#skills" class="footer__menu-link" rel="noopener noreferrer">
+                      <li className="footer__menu-item">
+                        <a href="#skills" className="footer__menu-link" rel="noopener noreferrer">
                           Skills
                         </a>
                       </li>
-                      <li class="footer__menu-item">
-                        <a href="#projects" class="footer__menu-link" rel="noopener noreferrer">
+                      <li className="footer__menu-item">
+                        <a href="#projects" className="footer__menu-link" rel="noopener noreferrer">
                           Projects
                         </a>
                       </li>
-                      <li class="footer__menu-item">
-                        <a href="#career" class="footer__menu-link" rel="noopener noreferrer">
+                      <li className="footer__menu-item">
+                        <a href="#career" className="footer__menu-link" rel="noopener noreferrer">
                           Career
                         </a>
                       </li>
-                      <li class="footer__menu-item">
-                        <a href="#contact" class="footer__menu-link" rel="noopener noreferrer">
+                      <li className="footer__menu-item">
+                        <a href="#contact" className="footer__menu-link" rel="noopener noreferrer">
                           Contact
                         </a>
                       </li>
@@ -69,18 +69,18 @@ const Footer = () => {
           </nav>
         </div>
       </div>
-      <div class="footer-copy">
-        <div class="container body-s">
-          <p class="footer-copy__text">&copy;2023 SeoeunCho, Inc. All rights reserved.</p>
-          <nav class="footer-copy__nav" aria-label="Copyright Navigation">
-            <ul class="footer-copy__menu">
-              <li class="footer-copy__menu-item">
-                <a href="/community/privacy-policy/" class="footer-copy__menu-link">
+      <div className="footer-copy">
+        <div className="container body-s">
+          <p className="footer-copy__text">&copy;2023 SeoeunCho, Inc. All rights reserved.</p>
+          <nav className="footer-copy__nav" aria-label="Copyright Navigation">
+            <ul className="footer-copy__menu">
+              <li className="footer-copy__menu-item">
+                <a href="/community/privacy-policy/" className="footer-copy__menu-link">
                   &nbsp;Privacy Policy.
                 </a>
               </li>
-              <li class="footer-copy__menu-item">
-                <a href="/community/terms-of-use/" class="footer-copy__menu-link">
+              <li className="footer-copy__menu-item">
+                <a href="/community/terms-of-use/" className="footer-copy__menu-link">
                   &nbsp;Terms of Use.
                 </a>
               </li>

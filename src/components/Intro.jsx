@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import worm from "../assets/img/worm.png";
+import { animate, initSquiggleMouseMovement } from "../utils/intro";
 
 const Intro = () => {
+  useEffect(() => {
+    animate();
+    initSquiggleMouseMovement();
+  }, []);
+
   return (
     <section id="intro" className="home-hero" data-block="home-hero">
       <div className="container">
@@ -9,7 +15,7 @@ const Intro = () => {
           <div className="home-hero__heading">
             <h1 className="visually-hidden">Seoeun</h1>
             <h1 id="home-hero-heading" className="home-hero__heading-text heading-xl" aria-hidden="true">
-              <span className="home-hero__frontend">
+              <span className="home-hero__seoeun">
                 S
                 <span className="e">
                   <div className="home-hero__flair home-hero__flair--windmill">
@@ -50,7 +56,20 @@ const Intro = () => {
                 </span>
                 oeun
               </span>
-              <span className="home-hero__develop">Portfolio</span>
+              <span className="home-hero__portfolio">
+                Port
+                <span class="f">
+                  <div id="home-hero-squiggle" class="home-hero-squiggle">
+                    <img src={worm} />
+                  </div>
+                  <span class="clip">f</span>
+                </span>
+                ol
+                <span class="i">
+                  <span>i</span>
+                </span>
+                o
+              </span>
             </h1>
           </div>
           <div className="home-hero__subtitle">
@@ -76,7 +95,9 @@ const Intro = () => {
           </div>
           <div className="home-hero__button">
             <a href="https://github.com/SeoeunCho/Portfolio2023" className="get-gsap-btn__button button">
-            <div className="button__label"><p>Go GITHUB</p></div>
+              <div className="button__label">
+                <p>Go GITHUB</p>
+              </div>
               <span className="button__icon">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 11" aria-hidden="true">

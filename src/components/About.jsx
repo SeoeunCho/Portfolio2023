@@ -2,12 +2,12 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" class="home-about" data-block="home-about">
-      <div class="container">
-        <div class="home-about__inner">
+    <section id="about" className="home-about" data-block="home-about">
+      <div className="container">
+        <div className="home-about__inner">
           <div className="home-about__section-heading">
             <h3 className="subtitle subtitle--regular subtitle--left">
-              <div class="subtitle__brace">
+              <div className="subtitle__brace">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 27 78" aria-hidden="true">
                   <path
                     fill="#FFFCE1"
@@ -15,8 +15,8 @@ const About = () => {
                   />
                 </svg>
               </div>
-              <p class="subtitle__label">Why GSAP®</p>
-              <div class="subtitle__brace">
+              <p className="subtitle__label">Why GSAP®</p>
+              <div className="subtitle__brace">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 27 78" aria-hidden="true">
                   <path
                     fill="#FFFCE1"
@@ -28,7 +28,7 @@ const About = () => {
           </div>
 
           <div className="home-intro__copy">
-            <h2 class="visually-hidden">
+            <h2 className="visually-hidden">
               GSAP allows you to effortlessly animate anything JS can touch. Delivering silky-smooth performance and unmatched support so
               you can focus on the fun stuff.
             </h2>
