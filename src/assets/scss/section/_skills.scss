@@ -87,7 +87,6 @@
         }
 
         .skills__content {
-          padding-bottom: 5rem;
           position: relative;
           z-index: 2;
 
@@ -99,7 +98,7 @@
           }
           .skills__description {
             color: var(--color-surface50);
-            font-size: max(1rem, min(0.294118vw + 0.772059rem, 1.125rem));
+            font-size: .875rem;
             line-height: 1.2;
             margin: max(1rem, min(0.776699vw + 0.817961rem, 1.75rem)) 0;
 

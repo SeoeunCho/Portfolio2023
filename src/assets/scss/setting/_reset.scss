@@ -60,6 +60,16 @@ samp {
   font-size: 1em;
 }
 
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: var(--color-surface50);
+  color: var(--color-surface-white);
+  border-radius: 6px;
+}
+
 small {
   font-size: 80%;
 }
