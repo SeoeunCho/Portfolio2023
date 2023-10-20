@@ -183,7 +183,7 @@
                 position: relative;
 
                 p {
-                  max-width: 22ch;
+                  max-width: 24ch;
                 }
 
                 .header__dropdown-footer-asset {
@@ -213,75 +213,11 @@
         &.header__menu--secondary {
           gap: 1rem;
 
-          &.header__menu-link {
-            font-size: 1rem;
-          }
-
           .header__menu-item--button {
             .button {
               font-size: 1rem;
               padding: 0.5625em 0.875em 0.5em;
-
-              &.button--stroke {
-                --button-stroke: var(--color-surface-white);
-                --button-hoverColor: var(--color-just-black);
-
-                &:hover {
-                  color: var(--button-hoverColor, var(--button-stroke));
-                }
-
-                &:after {
-                  bottom: 0;
-                  left: 0;
-                  position: absolute;
-                  right: 0;
-                  top: 0;
-
-                  border: 0.125rem solid var(--button-stroke);
-                  border-radius: 6.25rem;
-                  content: "";
-                  pointer-events: none;
-                }
-
-                .button__flair {
-                  bottom: 0;
-                  left: 0;
-                  pointer-events: none;
-                  position: absolute;
-                  right: 0;
-                  top: 0;
-
-                  transform: scale(0);
-                  transform-origin: 0 0;
-                  will-change: transform;
-
-                  &:before {
-                    aspect-ratio: 1;
-                    background: url(../../img/noise-button.png), var(--button-stroke);
-                    border-radius: 50%;
-                    content: "";
-                    display: block;
-                    left: 0;
-                    pointer-events: none;
-                    position: absolute;
-                    top: 0;
-                    transform: translate(-50%, -50%);
-                    width: 170%;
-                  }
-                }
-
-                .button__label {
-                  position: relative;
-                  text-align: center;
-                  transition: color 50ms var(--ease-in-out-quart);
-                }
-
-                &:hover {
-                  .button__label {
-                    transition: color 0.15s var(--ease-in-out-quart);
-                  }
-                }
-              }
+              border: 0.125rem solid var(--color-surface-white);
             }
           }
         }

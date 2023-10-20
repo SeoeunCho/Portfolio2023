@@ -52,7 +52,7 @@
           }
 
           .home-hero__frontend {
-            .o {
+            .e {
               position: relative;
 
               .home-hero__flair svg {
@@ -72,99 +72,74 @@
         @media only screen and (min-width: 48rem) {
           margin-bottom: 0;
         }
-
-        
       }
       .home-hero__button {
-        position: relative;
-        // visibility: hidden;
-        z-index: 2;
-
         @media only screen and (min-width: 48rem) {
           bottom: 16px;
           position: absolute;
           right: 0;
         }
 
-        .get-gsap-btn {
-          position: relative;
+        .button {
+          &:hover {
+            color: var(--color-just-black) !important;
+            path {
+              fill: var(--color-just-black) !important;
+            }
+          }
+
+          &::before {
+            width: 24vw;
+            height: 24vw;
+            background: var(--gradient-macha) border-box;
+          }
+        }
+
+        .get-gsap-btn__button {
+          background: linear-gradient(var(--color-just-black), var(--color-just-black)) padding-box, var(--gradient-macha) border-box;
+          border: 0.125rem solid transparent;
+          border-radius: 6.25rem;
+          color: var(--color-surface-white);
+          min-width: 13.75rem;
+          overflow: hidden;
           z-index: 1;
 
-          .get-gsap-btn--stroke .get-gsap-btn__button {
-            background: linear-gradient(
-                  var(--theme-color-lt, var(--color-core-green-lt)),
-                  var(--theme-color-lt, var(--color-core-green-lt))
-                )
-                padding-box,
-              var(--color-just-black) border-box;
+          .button__label {
+            padding-top: 3px;
           }
 
-          &.get-gsap-btn--fill {
-            color: var(--color-surface-white);
-          }
-
-          .get-gsap-btn__button {
-            background: linear-gradient(var(--theme-color-lt, var(--color-just-black)), var(--theme-color-lt, var(--color-just-black)))
-                padding-box,
-              var(--gradient-macha) border-box;
-
-            border: 0.125rem solid transparent;
-            min-width: 13.75rem;
+          .button__icon {
+            align-items: center;
+            background: 0 0;
+            border: 0.125rem solid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
             overflow: hidden;
-            position: relative;
-            transition: none;
-            z-index: 1;
+            width: 24px;
+            height: 24px;
 
-            &.get-gsap-btn--stroke {
-              color: currentColor;
+            span {
+              display: grid;
             }
 
-            &:after {
-              display: none;
+            svg {
+              grid-area: 1/1;
+              height: 11px;
+              width: 10px;
             }
 
-            > span {
-              align-items: center;
-              display: flex;
-              line-height: 0;
-              position: relative;
-              z-index: 3;
+            path {
+              fill: var(--color-surface-white);
             }
+          }
 
-            .button__icon {
-              align-items: center;
-              background: 0 0;
-              border: 0.125rem solid;
-              border-radius: 50%;
-              display: flex;
-              justify-content: center;
-              margin-left: 0.5rem;
-              overflow: hidden;
-              width: 24px;
-              height: 24px;
+          @media only screen and (min-width: 77.5rem) {
+            min-width: 17.125rem;
 
-              span {
-                display: grid;
-              }
-
-              svg {
-                grid-area: 1/1;
-                height: 11px;
-                width: 10px;
-              }
-
-              path {
-                fill: currentColor;
-              }
-            }
-
-            @media only screen and (min-width: 77.5rem) {
-              min-width: 17.125rem;
-
-              &:hover {
-                transform: none;
-                transition: none;
-              }
+            &:hover {
+              transform: none;
+              transition: none;
             }
           }
         }
