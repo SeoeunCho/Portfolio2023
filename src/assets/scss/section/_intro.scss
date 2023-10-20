@@ -41,10 +41,6 @@
             span {
               display: block;
               position: relative;
-
-              &.clip {
-                overflow: hidden;
-              }
             }
 
             &:last-child {

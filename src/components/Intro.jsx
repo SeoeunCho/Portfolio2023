@@ -62,7 +62,7 @@ const Intro = () => {
                   <div id="home-hero-squiggle" class="home-hero-squiggle">
                     <img src={worm} />
                   </div>
-                  <span class="clip">f</span>
+                  <span>f</span>
                 </span>
                 ol
                 <span class="i">
