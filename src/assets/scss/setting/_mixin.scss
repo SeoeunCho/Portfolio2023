@@ -34,3 +34,10 @@
   top: 0;
   width: 100%;
 }
+
+/* 한줄 효과 */
+@mixin line-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

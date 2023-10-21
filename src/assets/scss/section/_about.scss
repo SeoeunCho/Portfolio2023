@@ -33,12 +33,11 @@
     }
 
     .subtitle__label {
-      width: 90px;
-      font-size: 15.75px;
+      width: 72px;
       font-weight: 600;
       letter-spacing: -0.01em;
       line-height: 1.2;
-      // font-size: max(0.875rem, min(0.12945vw + 0.84466rem, 1rem));
+      font-size: max(0.875rem, min(0.12945vw + 0.84466rem, 1rem));
     }
   }
 
@@ -46,11 +45,14 @@
     padding-top: max(3.6875rem, min(0.323625vw + 3.61165rem, 4rem));
 
     .body-xl {
-      font-size: 74.9106px;
-      // font-size: max(2rem, min(3.17152vw + 1.25667rem, 5.0625rem));
+      font-size: max(2rem, min(3.17152vw + 1.25667rem, 4.5rem));
       font-weight: 400;
       letter-spacing: -0.01em;
       line-height: 1.2;
+    }
+
+    .hand {
+      display: inline-block;
     }
   }
 }

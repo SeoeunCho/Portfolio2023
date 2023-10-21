@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { stringEffect, handEffect } from "../utils/about";
 
 const About = () => {
+  useEffect(() => {
+    stringEffect();
+    // handEffect();
+  }, []);
+
   return (
     <section id="about" className="home-about" data-block="home-about">
       <div className="container">
@@ -15,7 +21,7 @@ const About = () => {
                   />
                 </svg>
               </div>
-              <p className="subtitle__label">Why GSAP®</p>
+              <p className="subtitle__label">About Me</p>
               <div className="subtitle__brace">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 27 78" aria-hidden="true">
                   <path
@@ -28,13 +34,13 @@ const About = () => {
           </div>
 
           <div className="home-intro__copy">
-            <h2 className="visually-hidden">
-              GSAP allows you to effortlessly animate anything JS can touch. Delivering silky-smooth performance and unmatched support so
-              you can focus on the fun stuff.
-            </h2>
             <h2 className="body-xl">
-              GSAP allows you to effortlessly animate anything JS can touch. Delivering silky-smooth performance and unmatched support so
-              you can focus on the fun stuff.
+              안녕하세요 <span className="hand">👋</span> <br />
+              꾸준히 업데이트하는 프론트엔드 개발자 조서은입니다.
+              <span className="split">
+                더 효율적인 방식이 무엇일까? 가독성 좋은 코드와 유지보수에 좋은 코드를 작성하기 위해 고민하고 발전시키기 위해 노력합니다.
+                새로운 기술에 호기심이 많고 도전하여 얻은 경험을 공유하는 것을 좋아합니다.
+              </span>
             </h2>
           </div>
         </div>

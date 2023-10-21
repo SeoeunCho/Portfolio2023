@@ -58,14 +58,14 @@ const Intro = () => {
               </span>
               <span className="home-hero__portfolio">
                 Port
-                <span class="f">
-                  <div id="home-hero-squiggle" class="home-hero-squiggle">
+                <span className="f">
+                  <div id="home-hero-squiggle" className="home-hero-squiggle">
                     <img src={worm} />
                   </div>
                   <span>f</span>
                 </span>
                 ol
-                <span class="i">
+                <span className="i">
                   <span>i</span>
                 </span>
                 o
