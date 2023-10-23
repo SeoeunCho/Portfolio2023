@@ -1,23 +1,14 @@
-import React, { useEffect, useState } from "react";
-import logo from "../assets/img/logo.png";
-import logoBlack from "../assets/img/logo-b.png";
+import React, { useState } from "react";
+// import logo from "../assets/img/logo.png";
+// import logoBlack from "../assets/img/logo-b.png";
 import headerShapes from "../assets/img/header-shapes.png";
-// import { setupMenuTimelines } from "../utils/header";
 
 const Header = () => {
-  // const [visibleMobileNav, setVisibleMobileNav] = useState(false);
   const [isActive, setActive] = useState(false);
 
   const handleToggle = () => {
     setActive((prev) => !prev);
   };
-
-  // useEffect(() => {
-  //   const hamMenu = document.querySelector(".ham");
-  //   hamMenu.toggleClass("active");
-  //   // setupMenuTimelines();
-  //   // console.log("toggle", togglePathTop, togglePathMiddle, togglePathBottom);
-  // }, [visibleMobileNav]);
 
   return (
     <header id="header" className="header" role="banner">
@@ -144,24 +135,24 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <nav>
-              <ul className="header__menu header__menu--secondary">
-                <li className="header__menu-item header__menu-item--button">
-                  <a
-                    href="https://github.com/SeoeunCho/Portfolio2023"
-                    target="_blank"
-                    className="button"
-                    data-block="button"
-                    rel="noreferrer">
-                    <span className="button__label">Go GITHUB</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            <div className="header__menu">
+              <div className="header__menu-item--button">
+                <a
+                  href="https://github.com/SeoeunCho/Portfolio2023"
+                  target="_blank"
+                  className="button"
+                  data-block="button"
+                  rel="noreferrer">
+                  <span className="button__label">Go GITHUB</span>
+                </a>
+              </div>
+            </div>
           </div>
           <div id="mobile-nav" className={isActive ? "mobile-nav active" : "mobile-nav"}>
             <div id="mobile-nav-background" className="mobile-nav__background"></div>
-            <div id="mobile-nav-panel-1" className={isActive ? 'mobile-nav__panel mobile-nav__panel--primary active' : 'mobile-nav__panel mobile-nav__panel--primary'}>
+            <div
+              id="mobile-nav-panel-1"
+              className={isActive ? "mobile-nav__panel mobile-nav__panel--primary active" : "mobile-nav__panel mobile-nav__panel--primary"}>
               <div className="mobile-nav__menu-wrapper">
                 <nav className="mobile-nav__menu">
                   <ul className="mobile-nav__list">
@@ -194,7 +185,11 @@ const Header = () => {
                 </nav>
               </div>
             </div>
-            <div id="mobile-nav-panel-2" className={isActive ? 'mobile-nav__panel mobile-nav__panel--secondary active' : 'mobile-nav__panel mobile-nav__panel--secondary'}>
+            <div
+              id="mobile-nav-panel-2"
+              className={
+                isActive ? "mobile-nav__panel mobile-nav__panel--secondary active" : "mobile-nav__panel mobile-nav__panel--secondary"
+              }>
               <nav className="mobile-nav__menu">
                 <ul className="mobile-nav__list">
                   <li className="mobile-nav__item">

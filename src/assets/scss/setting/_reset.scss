@@ -132,6 +132,7 @@ button {
   max-width: 120rem;
   padding-left: max(1.5rem, min(6.73139vw - 0.0776699rem, 8rem));
   padding-right: max(1.5rem, min(6.73139vw - 0.0776699rem, 8rem));
+  overflow: hidden;
 }
 
 .container--wide {

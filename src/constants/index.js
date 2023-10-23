@@ -1,7 +1,7 @@
 export const skillsData = [
   {
     title: "Overall",
-    label: '',
+    label: "",
     // label: "Clean Code, UI/UX, Code Review",
     desc: [
       "주도성을 갖고 솔선수범하는 마인드를 최우선으로 합니다.",
@@ -50,29 +50,78 @@ export const skillsData = [
   },
   {
     title: "TypeScript",
-    label: "TypeScript",
+    label: "interface, type alias, public, private, protected, static",
     desc: [
-      "JSX문법과 React hooks를 능숙하게 사용하고, 함수형 컴포넌트를 기반으로 컴포넌트를 작성합니다.",
-      "React-Router-Dom을 사용하여 SPA 내부에서 페이지를 전환할 수 있습니다.",
-      "Redux와 ContextAPI를 적절히 사용하여 State의 상태관리를 할 수 있습니다.",
+      "TypeScript를 활용해 웹 어플리케이션을 제작하는 데 익숙합니다.",
+      "때에 따라 interface와 type alias을 적절히 나누어 사용 할 수 있습니다.",
+      "Utility Type들을 활용해 약간 복잡한 Type들을 생성하여 개발할 수 있습니다.",
     ],
   },
   {
     title: "Next.js",
-    label: "Next.js",
+    label: "SSR, MongoDB, Routing, AWS",
     desc: [
-      "JSX문법과 React hooks를 능숙하게 사용하고, 함수형 컴포넌트를 기반으로 컴포넌트를 작성합니다.",
-      "React-Router-Dom을 사용하여 SPA 내부에서 페이지를 전환할 수 있습니다.",
-      "Redux와 ContextAPI를 적절히 사용하여 State의 상태관리를 할 수 있습니다.",
+      "MongoDB 라이브러리를 사용해 DB 데이터를 저장하고 출력할 수 있습니다.",
+      "Next.js 자동 라우팅 기능을 이용해 페이지 이동이 가능합니다.",
+      "AWS Elastic Beanstalk에 Next.js서버를 배포할 수 있습니다.",
     ],
   },
   {
     title: "GraphQl",
-    label: "GraphQl",
+    label: "API, Resolvers, Apollo",
     desc: [
-      "JSX문법과 React hooks를 능숙하게 사용하고, 함수형 컴포넌트를 기반으로 컴포넌트를 작성합니다.",
-      "React-Router-Dom을 사용하여 SPA 내부에서 페이지를 전환할 수 있습니다.",
-      "Redux와 ContextAPI를 적절히 사용하여 State의 상태관리를 할 수 있습니다.",
+      "Express GraphQL Server를 생성할 수 있습니다.",
+      "Resolvers 모듈화를 할 수 있습니다.",
+      "Apollo Server 4로 마이그레이션하여 개인프로젝트를 만든 경험이 있습니다.",
     ],
+  },
+  {
+    title: "상태관리",
+    label: "Redux, Recoil, ReactQuery",
+    desc: ["작성 전 입니다.", "작성 전 입니다.", "작성 전 입니다."],
+  },
+  {
+    title: "BackEnd & DB",
+    label: "Firebase, Node.js, Vercel",
+    desc: ["작성 전 입니다.", "작성 전 입니다.", "작성 전 입니다."],
+  },
+];
+
+export const projectsData = [
+  {
+    title: "Youtube/Unsplash/Movie React Site",
+    stack: "Vue.js, CompositionAPI, Swiper.js, API, Netlify",
+    video: "https://github.com/SeoeunCho/site2023-vue/blob/main/src/assets/img/scrrenshot/site2023-vue-screenshot.png?raw=true",
+    link: ["https://github.com/SeoeunCho/site2023-vue", "https://seoeun-vuesite.netlify.app/"],
+  },
+  {
+    title: "Youtube/Unsplash/Movie Vue Site",
+    stack: "React, Swiper.js, API, Netlify",
+    video: "https://github.com/SeoeunCho/site2023-react/blob/main/src/assets/img/scrrenshot/site2023-react-screenshot.png?raw=true",
+    link: ["https://github.com/SeoeunCho/site2023-react", "https://seoeun-reactsite.netlify.app/"],
+  },
+  {
+    title: "Project3",
+    stack: "javascript, react",
+    video: "https://raw.githubusercontent.com/SeoeunCho/site2023-react/main/src/assets/img/scrrenshot/site2023-react-screenshot.png",
+    link: ["code", "demo"],
+  },
+  {
+    title: "Project4",
+    stack: "javascript, react",
+    video: "https://raw.githubusercontent.com/SeoeunCho/site2023-react/main/src/assets/img/scrrenshot/site2023-react-screenshot.png",
+    link: ["code", "demo"],
+  },
+  {
+    title: "Project5",
+    stack: "javascript, react",
+    video: "https://raw.githubusercontent.com/SeoeunCho/site2023-react/main/src/assets/img/scrrenshot/site2023-react-screenshot.png",
+    link: ["code", "demo"],
+  },
+  {
+    title: "Project6",
+    stack: "javascript, react",
+    video: "https://raw.githubusercontent.com/SeoeunCho/site2023-react/main/src/assets/img/scrrenshot/site2023-react-screenshot.png",
+    link: ["code", "demo"],
   },
 ];

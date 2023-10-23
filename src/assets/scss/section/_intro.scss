@@ -1,5 +1,4 @@
 .home-hero {
-  overflow: hidden;
   padding-bottom: 2.1875rem;
   padding-top: 30vh;
   position: relative;
@@ -19,6 +18,7 @@
 
   .container {
     width: 100%;
+    overflow: visible;
 
     .home-hero__inner {
       position: relative;

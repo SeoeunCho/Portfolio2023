@@ -9,17 +9,17 @@
       padding-top: max(4rem, min(6.40777vw + 2.49818rem, 10.1875rem));
       position: relative;
       
-      &:before {
-        @media only screen and (min-width: 48rem) {
-          background-color: var(--color-surface25);
-          content: "";
-          height: 0.0625rem;
-          left: 0;
-          position: absolute;
-          top: 0;
-          width: 100%;
-        }
-      }
+      // &:before {
+      //   @media only screen and (min-width: 48rem) {
+      //     background-color: var(--color-surface25);
+      //     content: "";
+      //     height: 0.0625rem;
+      //     left: 0;
+      //     position: absolute;
+      //     top: 0;
+      //     width: 100%;
+      //   }
+      // }
 
       .docs-hero__content {
         align-items: center;

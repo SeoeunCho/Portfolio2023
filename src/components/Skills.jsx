@@ -37,11 +37,10 @@ const Skills = () => {
     <section id="skills">
       <div className="container">
         <div className="home-skills__inner">
-          
           <div className="skills__wrap" ref={horizontalRef}>
-          <div className="skills__fixed">
-            SKILL <span>CARD</span>
-          </div>
+            <div className="skills__fixed">
+              SKILL <span>CARD</span>
+            </div>
             <ul className="skills__panels">
               {skillsData.map((skill, i) => (
                 <li className="skills__panel" key={i} ref={(el) => (sectionRef.current[i] = el)}>
@@ -54,9 +53,7 @@ const Skills = () => {
                     ) : null}
                     <ul className="skills__description">
                       {skill.desc.map((desc, i) => (
-                        <li className="skills__desc" key={i}>
-                          {desc}
-                        </li>
+                        <li className="skills__desc" key={i} dangerouslySetInnerHTML={{ __html: desc }}></li>
                       ))}
                     </ul>
                   </div>
