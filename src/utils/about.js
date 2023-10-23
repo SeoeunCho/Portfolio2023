@@ -35,12 +35,6 @@ const stringEffect = () => {
 const handEffect = () => {
   const tl = gsap.timeline({ ease: "power2.out", duration: 0.6 });
   const hand = document.querySelector(".hand");
-  console.log(hand)
-
-  tl.from(hand, {
-    // rotation: 10,
-    // duration: 1,
-  });
 
   tl.to(hand, {
     rotation: 20,

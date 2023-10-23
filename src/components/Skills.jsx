@@ -27,7 +27,7 @@ const Skills = () => {
         anticipatePin: 1,
       },
     });
-    console.log("scrollTween", scrollTween);
+    // console.log("scrollTween", scrollTween);
 
     return () => {
       scrollTween.kill();
@@ -35,13 +35,16 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="horizontal" ref={horizontalRef}>
+    <section id="skills" ref={horizontalRef}>
       <div className="container">
         <div className="home-skills__inner">
+          <div className="skills__fixed">
+            <h2>Skill Card</h2>
+          </div>
           <div className="skills__wrap">
-            <ul className="skills__panels grid">
+            <ul className="skills__panels">
               {skillsData.map((skill, i) => (
-                <li className="skills__panel col-12 col-tablet-6 col-desktop-3" key={i} ref={(el) => (sectionRef.current[i] = el)}>
+                <li className="skills__panel" key={i} ref={(el) => (sectionRef.current[i] = el)}>
                   <div className="skills__content">
                     <h3 className="body-4 skills__heading">{skill.title}</h3>
                     {skill.label ? (
@@ -50,8 +53,10 @@ const Skills = () => {
                       </div>
                     ) : null}
                     <ul className="skills__description">
-                      {skill.desc.map((desc) => (
-                        <li className="skills__desc">{desc}</li>
+                      {skill.desc.map((desc, i) => (
+                        <li className="skills__desc" key={i}>
+                          {desc}
+                        </li>
                       ))}
                     </ul>
                   </div>

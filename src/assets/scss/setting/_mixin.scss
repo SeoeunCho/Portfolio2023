@@ -20,6 +20,14 @@
   transform: translate(-50%, -50%);
 }
 
+/* 중앙 정렬 */
+@mixin position-fixed-center {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* 수직 정렬 */
 @mixin position-horizon-center {
   position: absolute;

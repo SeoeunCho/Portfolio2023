@@ -4,7 +4,7 @@ import { stringEffect, handEffect } from "../utils/about";
 const About = () => {
   useEffect(() => {
     stringEffect();
-    // handEffect();
+    handEffect();
   }, []);
 
   return (
