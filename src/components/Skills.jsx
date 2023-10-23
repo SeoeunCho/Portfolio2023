@@ -14,7 +14,7 @@ const Skills = () => {
     const sections = sectionRef.current;
 
     let scrollTween = gsap.to(sections, {
-      xPercent: -120 * (sections.length - 1),
+      xPercent: -200 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: horizontal,
@@ -27,7 +27,6 @@ const Skills = () => {
         anticipatePin: 1,
       },
     });
-    // console.log("scrollTween", scrollTween);
 
     return () => {
       scrollTween.kill();
@@ -35,18 +34,19 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" ref={horizontalRef}>
+    <section id="skills">
       <div className="container">
         <div className="home-skills__inner">
+          
+          <div className="skills__wrap" ref={horizontalRef}>
           <div className="skills__fixed">
-            <h2>Skill Card</h2>
+            SKILL <span>CARD</span>
           </div>
-          <div className="skills__wrap">
             <ul className="skills__panels">
               {skillsData.map((skill, i) => (
                 <li className="skills__panel" key={i} ref={(el) => (sectionRef.current[i] = el)}>
                   <div className="skills__content">
-                    <h3 className="body-4 skills__heading">{skill.title}</h3>
+                    <h3 className="skills__heading">{skill.title}</h3>
                     {skill.label ? (
                       <div className="skills__label">
                         <p>&#123;{skill.label}&#125;</p>

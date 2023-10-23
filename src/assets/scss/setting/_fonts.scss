@@ -1,22 +1,62 @@
-// @font-face {
-//   font-family: "Apple SD Gothic Neo";
-//   font-style: bold;
-//   font-weight: 600;
-//   src: url("/fonts/Apple/AppleSDGothicNeoB.woff2") format("font-woff2"), url("/fonts/Apple/AppleSDGothicNeoB.woff") format("woff");
-// }
+/* Apple SD Gothic */
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../../fonts/AppleSDGothicNeoB.woff2) format("font-woff2"), url(../../fonts/AppleSDGothicNeoB.woff) format("woff");
+}
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../../fonts/AppleSDGothicNeoEB.woff2) format("font-woff2"), url(../../fonts/AppleSDGothicNeoEB.woff) format("woff");
+}
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../../fonts/AppleSDGothicNeoH.woff2) format("font-woff2"), url(../../fonts/AppleSDGothicNeoH.woff) format("woff");
+}
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../../fonts/AppleSDGothicNeoL.woff2) format("font-woff2"), url(../../fonts/AppleSDGothicNeoL.woff) format("woff");
+}
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../../fonts/AppleSDGothicNeoM.woff2) format("font-woff2"), url(../../fonts/AppleSDGothicNeoM.woff) format("woff");
+}
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../../fonts/AppleSDGothicNeoR.woff2) format("font-woff2"), url(../../fonts/AppleSDGothicNeoR.woff) format("woff");
+}
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../../fonts/AppleSDGothicNeoSB.woff2) format("font-woff2"), url(../../fonts/AppleSDGothicNeoSB.woff) format("woff");
+}
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../../fonts/AppleSDGothicNeoT.woff2) format("font-woff2"), url(../../fonts/AppleSDGothicNeoT.woff) format("woff");
+}
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url(../../fonts/AppleSDGothicNeoUL.woff2) format("font-woff2"), url(../../fonts/AppleSDGothicNeoUL.woff) format("woff");
+}
+
+/* PPMori */
+@font-face {
+  font-display: swap;
+  font-family: "Mori";
+  font-weight: 100;
+  font-style: lighter;
+  src: url(../../fonts/PPMori-Extralight.woff2) format("font-woff2"), url(../../fonts/PPMori-Extralight.woff) format("woff");
+}
 
 @font-face {
-  font-display: block;
-  font-family: Mori;
-  font-style: normal;
+  font-display: swap;
+  font-family: "Mori";
   font-weight: 400;
+  font-style: normal;
   src: url(../../fonts/PPMori-Regular.woff2) format("font-woff2"), url(../../fonts/PPMori-Regular.woff) format("woff");
 }
 
 @font-face {
-  font-display: block;
-  font-family: Mori;
-  font-style: normal;
+  font-display: swap;
+  font-family: "Mori";
   font-weight: 600;
+  font-style: bold;
   src: url(../../fonts/PPMori-SemiBold.woff2) format("font-woff2"), url(../../fonts/PPMori-SemiBold.woff) format("woff");
 }
