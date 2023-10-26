@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactPlayer from "react-player";
 import { projectsData } from "../constants/index";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -29,14 +30,18 @@ const Projects = () => {
           spaceBetween={0}
           navigation={false}
           modules={[FreeMode, Navigation, Thumbs]}
-          className="mySwiper2"
           onSlideChange={(swiper) => setSwiperIdx(swiper.realIndex)}>
           {projectsData.map((data, i) => (
             <SwiperSlide key={i}>
               <div className="projects-item">
-                <a href="/">
-                  <img src={data.video} alt="" />
-                </a>
+                <ReactPlayer
+                  className="projects-item__video"
+                  url={data.video}
+                  muted={true}
+                  playing={i === swiperIdx ? true : false}
+                  width={"100%"}
+                  height={"100%"}
+                />
               </div>
             </SwiperSlide>
           ))}

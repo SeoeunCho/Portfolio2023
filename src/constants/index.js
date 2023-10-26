@@ -1,8 +1,13 @@
+import vueSiteVideo from "../assets/videos/vue_site.mp4";
+import reactSiteVideo from "../assets/videos/react_site.mp4";
+import renewalSite01Video from "../assets/videos/gcimed_site.mp4";
+import renewalSite02Video from "../assets/videos/espoir_site.mp4";
+// import megaboxSiteVideo from "../assets/videos/megabox_site.mp4";
+
 export const skillsData = [
   {
     title: "Overall",
     label: "",
-    // label: "Clean Code, UI/UX, Code Review",
     desc: [
       "주도성을 갖고 솔선수범하는 마인드를 최우선으로 합니다.",
       "클린코드 작성을 위해 노력합니다.",
@@ -89,39 +94,39 @@ export const skillsData = [
 
 export const projectsData = [
   {
-    title: "Youtube/Unsplash/Movie React Site",
-    stack: "Vue.js, CompositionAPI, Swiper.js, API, Netlify",
-    video: "https://github.com/SeoeunCho/site2023-vue/blob/main/src/assets/img/scrrenshot/site2023-vue-screenshot.png?raw=true",
+    title: "Vue Site / Youtube, Unsplash, Movie & TV",
+    stack: "Vue.js, Sass, CompositionAPI, Swiper.js, Netlify",
+    video: vueSiteVideo,
     link: ["https://github.com/SeoeunCho/site2023-vue", "https://seoeun-vuesite.netlify.app/"],
   },
   {
-    title: "Youtube/Unsplash/Movie Vue Site",
-    stack: "React, Swiper.js, API, Netlify",
-    video: "https://github.com/SeoeunCho/site2023-react/blob/main/src/assets/img/scrrenshot/site2023-react-screenshot.png?raw=true",
+    title: "React Site / Youtube, Unsplash, Movie & TV",
+    stack: "React, Sass, React-Router-Dom, Swiper.js, Netlify",
+    video: reactSiteVideo,
     link: ["https://github.com/SeoeunCho/site2023-react", "https://seoeun-reactsite.netlify.app/"],
   },
   {
-    title: "Project3",
-    stack: "javascript, react",
-    video: "https://raw.githubusercontent.com/SeoeunCho/site2023-react/main/src/assets/img/scrrenshot/site2023-react-screenshot.png",
-    link: ["code", "demo"],
+    title: "GCiMED / Renewal Site",
+    stack: "HTML, JavaScript, jQuery",
+    video: renewalSite01Video,
+    link: ["https://github.com/SeoeunCho/renewal1", "https://seoeuncho.github.io/renewal1/"],
   },
   {
-    title: "Project4",
-    stack: "javascript, react",
-    video: "https://raw.githubusercontent.com/SeoeunCho/site2023-react/main/src/assets/img/scrrenshot/site2023-react-screenshot.png",
-    link: ["code", "demo"],
+    title: "espoir / Renewal Site",
+    stack: "HTML, JavaScript, jQuery",
+    video: renewalSite02Video,
+    link: ["https://github.com/SeoeunCho/renewal2", "https://seoeuncho.github.io/renewal2"],
   },
   {
-    title: "Project5",
-    stack: "javascript, react",
-    video: "https://raw.githubusercontent.com/SeoeunCho/site2023-react/main/src/assets/img/scrrenshot/site2023-react-screenshot.png",
-    link: ["code", "demo"],
+    title: "Megabox / WebStandard Site",
+    stack: "HTML, JavaScript, jQuery, Swiper.js, Youtube API, Responsive Web",
+    video: renewalSite02Video,
+    link: ["https://github.com/SeoeunCho/MegaboxSite", "https://seoeuncho.github.io/MegaboxSite/"],
   },
   {
     title: "Project6",
     stack: "javascript, react",
-    video: "https://raw.githubusercontent.com/SeoeunCho/site2023-react/main/src/assets/img/scrrenshot/site2023-react-screenshot.png",
+    video: reactSiteVideo,
     link: ["code", "demo"],
   },
 ];

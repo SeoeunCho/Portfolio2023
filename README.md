@@ -26,6 +26,7 @@ Prettier, ESlint를 이용해 문법에 오류가 없도록 작업하며 코드�
 - sass를 설치합니다. `npm install sass`
 - gsap를 설치합니다. `npm install gsap`
 - lenis를 설치합니다. `npm install @studio-freight/lenis`
+- react-player를 설치합니다. `npm i react-player`
 
 ## Screenshots
 <div style="display: flex;">

@@ -106,7 +106,7 @@ button {
     height: 20vw;
     position: absolute;
     top: 10%;
-    right:70%;
+    right: 70%;
     background-color: var(--color-surface-white);
     border-radius: 20vw;
     transition: all 0.4s;
@@ -165,11 +165,16 @@ textarea {
 /* body 초기화 */
 body {
   color: var(--color-surface-white);
+  background-color: var(--color-just-black);
   font-family: Mori, sans-serif;
   font-weight: 400;
 }
+
+/* 모바일 수평 스크롤 금지 */ 
+html,
 body {
-  background-color: var(--color-just-black);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {

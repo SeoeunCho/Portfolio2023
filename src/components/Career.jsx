@@ -15,7 +15,7 @@ const Career = () => {
                   />
                 </svg>
               </div>
-              <p className="subtitle__label">A wildly robust JavaScript animation library built for professionals</p>
+              <p className="subtitle__label">This is a career description of projects experience as a Front-End developer.</p>
               <div className="subtitle__brace">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 27 78" aria-hidden="true">
                   <path
