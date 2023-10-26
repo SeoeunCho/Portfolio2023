@@ -82,7 +82,7 @@ const Intro = () => {
                   />
                 </svg>
               </div>
-              <p className="subtitle__label">I am Seo-eun Cho, a front-end developer who constantly updates.</p>
+              <p className="subtitle__label">I am Seoeun Cho, a front-end developer who constantly updates.</p>
               <div className="subtitle__brace">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 27 78" aria-hidden="true">
                   <path
