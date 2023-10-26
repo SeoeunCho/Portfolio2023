@@ -156,7 +156,6 @@
       .header__menu {
         display: flex;
         gap: 1.5rem;
-        list-style: none;
 
         .header__menu-item {
           align-items: center;
@@ -247,7 +246,6 @@
 
               .header__dropdown-menu {
                 grid-column: span 1;
-                list-style: none;
                 padding: 2.4375rem;
 
                 &.header__dropdown-menu--1 {
@@ -348,8 +346,6 @@
           padding-top: 6.5rem;
 
           .mobile-nav__list {
-            list-style: none;
-
             .mobile-nav__item {
               .mobile-nav__link {
                 display: block;

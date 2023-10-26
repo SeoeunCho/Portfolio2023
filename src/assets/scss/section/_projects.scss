@@ -8,17 +8,7 @@
     .home-projects__inner {
       padding-top: max(4rem, min(6.40777vw + 2.49818rem, 10.1875rem));
       position: relative;
-      // height: 100vh;
 
-      // &:after {
-      //   background-color: var(--color-surface25);
-      //   bottom: 0;
-      //   content: "";
-      //   height: 0.0625rem;
-      //   left: 0;
-      //   position: absolute;
-      //   width: 100%;
-      // }
       &:before {
         @media only screen and (min-width: 48rem) {
           background-color: var(--color-surface25);
@@ -36,47 +26,32 @@
         letter-spacing: -0.01em;
         line-height: 1;
         font-size: max(4rem, min(1.16505vw + 3.72694rem, 5.125rem));
-        // position: inherit;
-        // z-index: 2;
       }
     }
   }
 
   .projects__wrap {
-    // margin-top: -10px;
-    // z-index: 1;
     margin: 0 auto;
 
     top: -22px;
     left: -40%;
     position: relative;
-    // padding-bottom: 100px;
 
     .swiper {
       width: 180%;
+      margin-bottom: 20px;
 
       .swiper-wrapper {
         .swiper-slide {
-          // transition: all 0.3s;
-          // transform: scale(1.8);
-          // opacity: 0.5;
-          // padding-top: 167px;
-          // padding-bottom: 200px;
           transition: all 0.3s ease-in-out;
 
           .projects-item {
-            // width: 120%;
-            // height: auto;
-            // width: 1151.88px;
-            // height: 691.13;
             border-radius: 0.5rem;
 
             video {
               border-radius: 0.5rem;
-              // background-color: pink;
             }
           }
-          //
 
           &.swiper-slide-prev {
             opacity: 1;
@@ -85,7 +60,7 @@
 
           &.swiper-slide-active {
             transform: scale(0.9);
-            top: -29px;
+            top: -23px;
             z-index: 2;
             opacity: 1;
           }
@@ -99,12 +74,8 @@
     }
 
     .projects__details {
-      // padding-left: 6.25vw;
-      // padding-right: 6.25vw;
-      // position: relative;
       margin: 0 auto;
       margin-left: 63%;
-      width: 33.33%;
       height: auto;
 
       @media only screen and (min-width: 48rem) {

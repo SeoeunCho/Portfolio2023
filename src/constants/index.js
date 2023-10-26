@@ -2,7 +2,8 @@ import vueSiteVideo from "../assets/videos/vue_site.mp4";
 import reactSiteVideo from "../assets/videos/react_site.mp4";
 import renewalSite01Video from "../assets/videos/gcimed_site.mp4";
 import renewalSite02Video from "../assets/videos/espoir_site.mp4";
-// import megaboxSiteVideo from "../assets/videos/megabox_site.mp4";
+import megaboxSiteVideo from "../assets/videos/megabox_site.mp4";
+import portfolioSiteVideo from "../assets/videos/portfolio_site.mp4";
 
 export const skillsData = [
   {
@@ -95,38 +96,62 @@ export const skillsData = [
 export const projectsData = [
   {
     title: "Vue Site / Youtube, Unsplash, Movie & TV",
-    stack: "Vue.js, Sass, CompositionAPI, Swiper.js, Netlify",
+    stack: "Vue.js, Sass, Responsive, WebStandard, CompositionAPI, Swiper.js, Netlify",
     video: vueSiteVideo,
     link: ["https://github.com/SeoeunCho/site2023-vue", "https://seoeun-vuesite.netlify.app/"],
   },
   {
+    title: "Twitter Site Disney",
+    stack: "React, TypeScript, Redux",
+    video: reactSiteVideo,
+    link: ["code", "demo"],
+  },
+  {
     title: "React Site / Youtube, Unsplash, Movie & TV",
-    stack: "React, Sass, React-Router-Dom, Swiper.js, Netlify",
+    stack: "React, Sass, Responsive, WebStandard, React-Router-Dom, Swiper.js, Netlify",
     video: reactSiteVideo,
     link: ["https://github.com/SeoeunCho/site2023-react", "https://seoeun-reactsite.netlify.app/"],
   },
   {
+    title: "Next.js",
+    stack: "Next.js",
+    video: reactSiteVideo,
+    link: ["code", "demo"],
+  },
+  {
+    title: "GraphQL",
+    stack: "GraphQL",
+    video: reactSiteVideo,
+    link: ["code", "demo"],
+  },
+  {
+    title: "CI/CD",
+    stack: "Docker, Recoil",
+    video: reactSiteVideo,
+    link: ["code", "demo"],
+  },
+  {
     title: "GCiMED / Renewal Site",
-    stack: "HTML, JavaScript, jQuery",
+    stack: "HTML/CSS, JavaScript, jQuery",
     video: renewalSite01Video,
     link: ["https://github.com/SeoeunCho/renewal1", "https://seoeuncho.github.io/renewal1/"],
   },
   {
     title: "espoir / Renewal Site",
-    stack: "HTML, JavaScript, jQuery",
+    stack: "HTML/CSS, JavaScript, jQuery",
     video: renewalSite02Video,
     link: ["https://github.com/SeoeunCho/renewal2", "https://seoeuncho.github.io/renewal2"],
   },
   {
     title: "Megabox / WebStandard Site",
-    stack: "HTML, JavaScript, jQuery, Swiper.js, Youtube API, Responsive Web",
-    video: renewalSite02Video,
+    stack: "HTML/CSS, Responsive, JavaScript, jQuery, Swiper.js, Youtube API",
+    video: megaboxSiteVideo,
     link: ["https://github.com/SeoeunCho/MegaboxSite", "https://seoeuncho.github.io/MegaboxSite/"],
   },
   {
-    title: "Project6",
-    stack: "javascript, react",
-    video: reactSiteVideo,
-    link: ["code", "demo"],
+    title: "Portfolio Site",
+    stack: "HTML/CSS, Responsive, JavaScript, jQuery",
+    video: portfolioSiteVideo,
+    link: ["https://github.com/SeoeunCho/Portfolio01", "https://seoeuncho.github.io/Portfolio01/"],
   },
 ];

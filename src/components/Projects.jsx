@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ReactPlayer from "react-player";
 import { projectsData } from "../constants/index";
 
@@ -9,9 +9,19 @@ import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 const Projects = () => {
   const [swiperIdx, setSwiperIdx] = useState(0);
+  const [isActive, setIsActive] = useState(false);
+  const projectRef = useRef(null);
+
+  const handleScroll = () => {
+    setIsActive(true);
+  };
+
+  useEffect(() => {
+    projectRef.current.addEventListener("mouseover", handleScroll);
+  }, []);
 
   return (
-    <section id="projects" className="home-projects" data-block="home-projects">
+    <section id="projects" className="home-projects" data-block="home-projects" ref={projectRef}>
       <div className="container">
         <div className="home-projects__inner">
           <h3 className="heading-m">Projects</h3>
@@ -38,7 +48,8 @@ const Projects = () => {
                   className="projects-item__video"
                   url={data.video}
                   muted={true}
-                  playing={i === swiperIdx ? true : false}
+                  loop={true}
+                  playing={i === swiperIdx && isActive ? true : false}
                   width={"100%"}
                   height={"100%"}
                 />

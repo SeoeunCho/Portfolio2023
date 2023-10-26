@@ -126,13 +126,17 @@ button {
 }
 
 /* 스타일 초기화 */
+ul,
+li {
+  list-style: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   max-width: 120rem;
   padding-left: max(1.5rem, min(6.73139vw - 0.0776699rem, 8rem));
   padding-right: max(1.5rem, min(6.73139vw - 0.0776699rem, 8rem));
-  overflow: hidden;
 }
 
 .container--wide {
@@ -165,12 +169,15 @@ textarea {
 /* body 초기화 */
 body {
   color: var(--color-surface-white);
-  background-color: var(--color-just-black);
   font-family: Mori, sans-serif;
   font-weight: 400;
 }
 
-/* 모바일 수평 스크롤 금지 */ 
+body {
+  background-color: var(--color-just-black);
+}
+
+/* 모바일 수평 스크롤 금지 */
 html,
 body {
   max-width: 100%;
@@ -190,7 +197,7 @@ main {
   position: absolute;
   left: 10px;
   top: -92px;
-  z-index: 100000;
+  // z-index: 100000;
   font-size: 1rem;
   padding: 10px 30px;
   color: var(--white);

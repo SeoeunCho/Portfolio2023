@@ -94,9 +94,9 @@ const Intro = () => {
             </h3>
           </div>
           <div className="home-hero__button">
-            <a href="https://github.com/SeoeunCho/Portfolio2023" className="get-gsap-btn__button button">
+            <a href="https://github.com/SeoeunCho/Portfolio2023" target="_blank" className="get-gsap-btn__button button" rel="noreferrer">
               <div className="button__label">
-                <p>Go GITHUB</p>
+                <p>Get CODE</p>
               </div>
               <span className="button__icon">
                 <span>

@@ -138,7 +138,7 @@ const Header = () => {
             <div className="header__menu">
               <div className="header__menu-item--button">
                 <a
-                  href="https://github.com/SeoeunCho/Portfolio2023"
+                  href="https://github.com/SeoeunCho"
                   target="_blank"
                   className="button"
                   data-block="button"

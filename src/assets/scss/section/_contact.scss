@@ -2,7 +2,8 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 120rem;
-  padding: max(3rem, min(1.0356vw + 2.75728rem, 4rem)) max(1.5rem, min(6.73139vw - 0.0776699rem, 8rem));
+  padding: 0 max(3rem, min(1.0356vw + 2.75728rem, 4rem)) max(1.5rem, min(6.73139vw - 0.0776699rem, 8rem));
+
   .contact__box {
     @media (min-width: 768px) {
       text-align: left;
@@ -12,9 +13,6 @@
       border: 0.125rem solid transparent;
       border-radius: 1rem;
       padding: 2em 2em 3em 2em;
-
-      // padding: 2em 2em 3em;
-      margin-bottom: 3.5em;
     }
 
     .contact__wrap {
