@@ -26,6 +26,98 @@ const Career = () => {
               </div>
             </div>
             <div className="career__heading">Career Worklist</div>
+            <div className="career__items">
+              <ul>
+                <li className="worklist__all">경력기술서</li>
+                <a href="https://enchanting-drip-66d.notion.site/9b51f1201d4f4727bedaf90ee49312f3" target="_blank" rel="noreferrer">
+                  <ul>
+                    <li>Front-End 담당</li>
+                    <li>1년 3개월간 작업한 모든 프로젝트를 볼 수 있도록 한곳에 정리하였습니다.</li>
+                    <li>
+                      <span>전체보기</span>
+                    </li>
+                  </ul>
+                </a>
+              </ul>
+              <ul>
+                <li>
+                  ERP 골프장
+                  <br />
+                  서비스 웹
+                </li>
+                <a href="https://enchanting-drip-66d.notion.site/ERP-31d935e6e26148f386223b1128b17b15" target="_blank" rel="noreferrer">
+                  <ul>
+                    <li>웹 개발<br /> CRUD 구현<br />공통컴포넌트 개발</li>
+                    <li>골프장 운영 통합솔루션으로 회원, 예약, 프론트, 권한 등 효율적인 관리 서비스를 제공하는 신규 개발</li>
+                    <li>
+                      <span className="web">Web</span>
+                      <span className="vue">Vue3</span>
+                      <span className="js">JavaScript</span>
+                      <span>HTML</span>
+                      <span>Sass</span>
+                    </li>
+                  </ul>
+                </a>
+              </ul>
+              <ul>
+                <li>
+                  아마추어 골프리그
+                  <br />
+                  1차 / 2차
+                </li>
+                <a href="https://enchanting-drip-66d.notion.site/1-2-0b6ade6a3255433881f0293c36362dae" target="_blank" rel="noreferrer">
+                  <ul>
+                    <li>모바일 웹 개발<br />어드민 웹 개발<br />운명 및 유지보수</li>
+                    <li>아마추어 골프선수 모집 및 경기 주최, 참가신청을 받고 랭킹 기록을 제공하는 신규 서비스 개발</li>
+                    <li>
+                      <span className="web_app">WebApp</span>
+                      <span className="vue">Vue.js</span>
+                      <span className="vue">Vuex</span>
+                      <span className="js">JavaScript</span>
+                      <span>HTML</span>
+                      <span>Sass</span>
+                    </li>
+                  </ul>
+                </a>
+              </ul>
+              <ul>
+                <li>디지털매거진</li>
+                <a href="https://enchanting-drip-66d.notion.site/ee9109e5a2ac43989d9ae586f94223cd" target="_blank" rel="noreferrer">
+                  <ul>
+                    <li>모바일 웹 개발<br />어드민 웹 개발<br />운명 및 유지보수</li>
+                    <li>자회사인 골프매거진 코리아의 기사를 앱에서도 볼 수 있도록 매월호 정보를 제공하는 신규 서비스 개발</li>
+                    <li>
+                      <span className="web_app">WebApp</span>
+                      <span className="vue">Vue.js</span>
+                      <span className="js">JavaScript</span>
+                      <span>HTML</span>
+                      <span>Sass</span>
+                    </li>
+                  </ul>
+                </a>
+              </ul>
+              <ul>
+                <li>
+                  스마트골퍼클럽
+                  <br />
+                  모집
+                </li>
+                <a href="https://enchanting-drip-66d.notion.site/d891a9b9813d4909a88ba4d18a0eed34" target="_blank" rel="noreferrer">
+                  <ul>
+                    <li>모바일 웹 개발</li>
+                    <li>특별회원 모집을 위한 설문조사형 이벤트페이지 개발</li>
+                    <li>
+                      <span className="web_app">WebApp</span>
+                      <span className="vue">Vue.js</span>
+                      <span className="vue">Vuex</span>
+                      <span className="js">JavaScript</span>
+                      <span>HTML</span>
+                      <span>Sass</span>
+                    </li>
+                  </ul>
+                </a>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

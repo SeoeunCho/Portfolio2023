@@ -1,14 +1,14 @@
 .home-career {
   .container {
     position: relative;
-    z-index: 2;
+    z-index: 1;
 
     .home-career__inner {
       margin: 0 auto;
       padding-bottom: max(4.5rem, min(11.8447vw + 1.72391rem, 15.9375rem));
-      padding-top: max(4rem, min(6.40777vw + 2.49818rem, 10.1875rem));
+      padding-top: max(4.5rem, min(11.8447vw + 1.72391rem, 15.9375rem));
       position: relative;
-      
+
       // &:before {
       //   @media only screen and (min-width: 48rem) {
       //     background-color: var(--color-surface25);
@@ -27,7 +27,6 @@
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
-        max-width: 1150px;
         padding-top: max(2rem, min(10.7443vw + 1.4818rem, 4rem));
         width: 100%;
 
@@ -58,7 +57,7 @@
         }
 
         .career__heading {
-          padding-bottom: 1.5rem;
+          padding-bottom: 3.5rem;
           text-align: center;
           white-space: pre-line;
           font-weight: 600;
@@ -70,6 +69,128 @@
 
         &:last-child {
           position: relative !important;
+        }
+
+        .career__items {
+          width: 100%;
+
+          > ul {
+            display: flex;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            transition: 0.2s;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            &:hover {
+              transform: scale(1.02);
+              filter: drop-shadow(0px 10px 15px rgba(85, 83, 135, 0.1607843137));
+            }
+
+            > li {
+              &:first-child {
+                color: #fff;
+                background: #343440;
+                border-radius: 10px;
+                padding: 10px;
+                width: 12%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                line-height: 22px;
+                cursor: default;
+                text-align: center;
+              }
+
+              &.worklist__all {
+                background: var(--gradient-macha);
+                color: #000;
+              }
+            }
+
+            > a {
+              width: 90%;
+              padding: 0 10px;
+              margin-left: 10px;
+              transition: 0.25s;
+              border-radius: 10px;
+              cursor: pointer;
+
+              &:hover {
+                color: #000;
+                background: #fff;
+
+                > ul {
+                  > li:nth-child(2) {
+                    color: #000;
+                  }
+                }
+              }
+
+              > ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                  padding-bottom: 0;
+                  border-bottom: none;
+                }
+
+                > li:nth-child(1) {
+                  width: 17%;
+                  line-height: 22px;
+                  font-weight: 900;
+                  padding: 10px 0;
+                }
+
+                > li:nth-child(2) {
+                  width: 55%;
+                  font-size: 14px;
+                  color: #ffffff7b;
+                  padding: 10px 0;
+                }
+
+                > li:nth-child(3) {
+                  font-size: 14px;
+                  width: 20%;
+                  display: flex;
+                  gap: 5px;
+                  padding: 10px 0;
+                  flex-wrap: wrap;
+
+                  span {
+                    transition: 0.25s;
+                    color: #000;
+                    background: rgba(227, 226, 224, 0.5);
+                    // background: rgb(229, 231, 237);
+                    border-radius: 5px;
+                    padding: 5px 10px 2px 10px;
+                    height: 100%;
+
+                    &.web {
+                      background: rgb(255, 226, 221);
+                    }
+                    &.web_app {
+                      background: rgb(211, 229, 239);
+                    }
+                    &.vue {
+                      background: rgb(219, 237, 219);
+                    }
+                    &.js {
+                      background: rgb(253, 236, 200);
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
