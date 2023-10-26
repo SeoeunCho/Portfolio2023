@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 // import logo from "../assets/img/logo.png";
 // import logoBlack from "../assets/img/logo-b.png";
 import headerShapes from "../assets/img/header-shapes.png";
+import { mobileMenuData } from "../constants/index";
 
 const Header = () => {
   const [isActive, setActive] = useState(false);
@@ -47,31 +48,13 @@ const Header = () => {
                           d="M42.164 16a9 9 0 0 1-6.364-2.636l-9.9-9.9a5 5 0 0 0-7.071 0l-9.9 9.9A9 9 0 0 1 2.565 16H0v-2h2.565a7 7 0 0 0 4.95-2.05l9.9-9.9a7 7 0 0 1 9.9 0l9.899 9.9a7 7 0 0 0 4.95 2.05H45v2h-2.836Z"></path>
                       </svg>
                       <ul className="header__dropdown-menu header__dropdown-menu--1">
-                        <li className="header__menu-item">
-                          <a href="#about" className="header__dropdown-link">
-                            About
-                          </a>
-                        </li>
-                        <li className="header__menu-item">
-                          <a href="#skills" className="header__dropdown-link">
-                            Skills
-                          </a>
-                        </li>
-                        <li className="header__menu-item">
-                          <a href="#projects" className="header__dropdown-link">
-                            Projects
-                          </a>
-                        </li>
-                        <li className="header__menu-item">
-                          <a href="#career" className="header__dropdown-link">
-                            Career
-                          </a>
-                        </li>
-                        <li className="header__menu-item">
-                          <a href="#contact" className="header__dropdown-link">
-                            Contact
-                          </a>
-                        </li>
+                        {mobileMenuData.map((menu, i) => (
+                          <li className="header__menu-item" key={i}>
+                            <a href={menu.label} className="header__dropdown-link" aria-current="page">
+                              {menu.title}
+                            </a>
+                          </li>
+                        ))}
                       </ul>
                       <ul className="header__dropdown-menu">
                         <li className="header__menu-item">
@@ -112,31 +95,13 @@ const Header = () => {
                     </div>
                   </div>
                 </li>
-                <li className="header__menu-item">
-                  <a href="#about" className="header__menu-link" aria-current="page">
-                    About
-                  </a>
-                </li>
-                <li className="header__menu-item">
-                  <a href="#skills" className="header__menu-link">
-                    Skills
-                  </a>
-                </li>
-                <li className="header__menu-item">
-                  <a href="#projects" className="header__menu-link">
-                    Projects
-                  </a>
-                </li>
-                <li className="header__menu-item">
-                  <a href="#career" className="header__menu-link">
-                    Career
-                  </a>
-                </li>
-                <li className="header__menu-item">
-                  <a href="#contact" className="header__menu-link">
-                    Contact
-                  </a>
-                </li>
+                {mobileMenuData.map((menu, i) => (
+                  <li className="header__menu-item" key={i}>
+                    <a href={menu.label} className="header__menu-link" aria-current="page">
+                      {menu.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </nav>
             <div className="header__menu">
@@ -155,31 +120,13 @@ const Header = () => {
               <div className="mobile-nav__menu-wrapper">
                 <nav className="mobile-nav__menu">
                   <ul className="mobile-nav__list">
-                    <li className="mobile-nav__item">
-                      <a className="mobile-nav__link" href="#about">
-                        About
-                      </a>
-                    </li>
-                    <li className="mobile-nav__item">
-                      <a className="mobile-nav__link" href="#skills">
-                        Skills
-                      </a>
-                    </li>
-                    <li className="mobile-nav__item">
-                      <a className="mobile-nav__link" href="#projects">
-                        Projects
-                      </a>
-                    </li>
-                    <li className="mobile-nav__item">
-                      <a className="mobile-nav__link" href="#career">
-                        Career
-                      </a>
-                    </li>
-                    <li className="mobile-nav__item">
-                      <a className="mobile-nav__link" href="#contact">
-                        Contact
-                      </a>
-                    </li>
+                    {mobileMenuData.map((menu, i) => (
+                      <li className="mobile-nav__item" key={i} onClick={() => setActive(false)}>
+                        <a className="mobile-nav__link" href={menu.label}>
+                          {menu.title}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </nav>
               </div>

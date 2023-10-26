@@ -5,6 +5,14 @@ import renewalSite02Video from "../assets/videos/espoir_site.mp4";
 import megaboxSiteVideo from "../assets/videos/megabox_site.mp4";
 import portfolioSiteVideo from "../assets/videos/portfolio_site.mp4";
 
+export const mobileMenuData = [
+  { title: "About", label: "#about" },
+  { title: "Skills", label: "#skills" },
+  { title: "Projects", label: "#projects" },
+  { title: "Career", label: "#career" },
+  { title: "Contact", label: "#contact" },
+];
+
 export const skillsData = [
   {
     title: "Overall",
