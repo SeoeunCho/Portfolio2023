@@ -47,7 +47,12 @@ const Career = () => {
                 </li>
                 <a href="https://enchanting-drip-66d.notion.site/ERP-31d935e6e26148f386223b1128b17b15" target="_blank" rel="noreferrer">
                   <ul>
-                    <li>웹 개발<br /> CRUD 구현<br />공통컴포넌트 개발</li>
+                    <li>
+                      웹 개발
+                      <br /> CRUD 구현
+                      <br />
+                      공통컴포넌트 개발
+                    </li>
                     <li>골프장 운영 통합솔루션으로 회원, 예약, 프론트, 권한 등 효율적인 관리 서비스를 제공하는 신규 개발</li>
                     <li>
                       <span className="web">Web</span>
@@ -67,7 +72,13 @@ const Career = () => {
                 </li>
                 <a href="https://enchanting-drip-66d.notion.site/1-2-0b6ade6a3255433881f0293c36362dae" target="_blank" rel="noreferrer">
                   <ul>
-                    <li>모바일 웹 개발<br />어드민 웹 개발<br />운명 및 유지보수</li>
+                    <li>
+                      모바일 웹 개발
+                      <br />
+                      어드민 웹 개발
+                      <br />
+                      운명 및 유지보수
+                    </li>
                     <li>아마추어 골프선수 모집 및 경기 주최, 참가신청을 받고 랭킹 기록을 제공하는 신규 서비스 개발</li>
                     <li>
                       <span className="web_app">WebApp</span>
@@ -84,7 +95,13 @@ const Career = () => {
                 <li>디지털매거진</li>
                 <a href="https://enchanting-drip-66d.notion.site/ee9109e5a2ac43989d9ae586f94223cd" target="_blank" rel="noreferrer">
                   <ul>
-                    <li>모바일 웹 개발<br />어드민 웹 개발<br />운명 및 유지보수</li>
+                    <li>
+                      모바일 웹 개발
+                      <br />
+                      어드민 웹 개발
+                      <br />
+                      운명 및 유지보수
+                    </li>
                     <li>자회사인 골프매거진 코리아의 기사를 앱에서도 볼 수 있도록 매월호 정보를 제공하는 신규 서비스 개발</li>
                     <li>
                       <span className="web_app">WebApp</span>
