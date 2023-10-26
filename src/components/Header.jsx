@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import logo from "../assets/img/logo.png";
 // import logoBlack from "../assets/img/logo-b.png";
 import headerShapes from "../assets/img/header-shapes.png";
@@ -9,6 +9,10 @@ const Header = () => {
   const handleToggle = () => {
     setActive((prev) => !prev);
   };
+
+  useEffect(() => {
+    document.body.classList.toggle("scrollLock", isActive);
+  }, [isActive]);
 
   return (
     <header id="header" className="header" role="banner">
@@ -137,12 +141,7 @@ const Header = () => {
             </nav>
             <div className="header__menu">
               <div className="header__menu-item--button">
-                <a
-                  href="https://github.com/SeoeunCho"
-                  target="_blank"
-                  className="button"
-                  data-block="button"
-                  rel="noreferrer">
+                <a href="https://github.com/SeoeunCho" target="_blank" className="button" data-block="button" rel="noreferrer">
                   <span className="button__label">Go GITHUB</span>
                 </a>
               </div>

@@ -177,9 +177,8 @@ body {
   background-color: var(--color-just-black);
 }
 
-/* 모바일 수평 스크롤 금지 */
-html,
-body {
+/* 모바일 수평 스크롤 방지 */
+html {
   max-width: 100%;
   overflow-x: hidden;
 }
