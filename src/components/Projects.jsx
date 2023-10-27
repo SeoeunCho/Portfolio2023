@@ -16,8 +16,22 @@ const Projects = () => {
     setIsActive(true);
   };
 
+  const createDiv = () => {
+    const prevBtn = document.querySelector(".swiper-button-prev");
+    const nextBtn = document.querySelector(".swiper-button-next");
+
+    const div = document.createElement("div");
+    prevBtn.classList.add("button");
+    prevBtn.appendChild(div);
+
+    const div2 = document.createElement("div");
+    nextBtn.classList.add("button");
+    nextBtn.appendChild(div2);
+  };
+
   useEffect(() => {
     projectRef.current.addEventListener("mouseover", handleScroll);
+    createDiv();
   }, []);
 
   return (
@@ -29,16 +43,17 @@ const Projects = () => {
       </div>
       <div className="projects__wrap">
         <Swiper
-          style={{
-            "--swiper-navigation-color": "#fff",
-            "--swiper-pagination-color": "#fff",
-          }}
           speed={1000}
           loop={true}
           centeredSlides={true}
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={0}
-          navigation={false}
+          navigation={true}
+          breakpoints={{
+            768: {
+              slidesPerView: 3,
+            },
+          }}
           modules={[FreeMode, Navigation, Thumbs]}
           onSlideChange={(swiper) => setSwiperIdx(swiper.realIndex)}>
           {projectsData.map((data, i) => (
@@ -56,21 +71,30 @@ const Projects = () => {
               </div>
             </SwiperSlide>
           ))}
+          <div className="projects__details">
+            <div className="projects__title">{projectsData[swiperIdx].title}</div>
+            <div className="projects__label">
+              <p>&#123;{projectsData[swiperIdx].stack}&#125;</p>
+            </div>
+            <div className="projects__menu-item--button">
+              <a href={projectsData[swiperIdx].link[0]} target="_blank" className="button" data-block="button" rel="noreferrer">
+                <span className="button__label">Get Code</span>
+              </a>
+              <a href={projectsData[swiperIdx].link[1]} target="_blank" className="button" data-block="button" rel="noreferrer">
+                <span className="button__label">Check Demo</span>
+              </a>
+            </div>
+          </div>
         </Swiper>
-        <div className="projects__details">
-          <div className="projects__title">{projectsData[swiperIdx].title}</div>
-          <div className="projects__label">
-            <p>&#123;{projectsData[swiperIdx].stack}&#125;</p>
-          </div>
-          <div className="projects__menu-item--button">
-            <a href={projectsData[swiperIdx].link[0]} target="_blank" className="button" data-block="button" rel="noreferrer">
-              <span className="button__label">Get Code</span>
-            </a>
-            <a href={projectsData[swiperIdx].link[1]} target="_blank" className="button" data-block="button" rel="noreferrer">
-              <span className="button__label">Check Demo</span>
-            </a>
-          </div>
-        </div>
+
+        {/* <div className="projects__controls">
+          <button className="button prev" aria-label="Previous" data-block="button">
+            <span className="button__icon button__icon-left">btn</span>
+          </button>
+          <button className="button next" aria-label="Next" data-block="button">
+            <span className="button__icon button__icon-right">btn</span>
+          </button>
+        </div> */}
       </div>
     </section>
   );

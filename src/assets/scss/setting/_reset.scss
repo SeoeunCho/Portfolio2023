@@ -95,26 +95,22 @@ button {
   position: relative;
   text-decoration: none;
 
-  @media only screen and (max-width: 39.9375rem) {
-    width: 100%;
-  }
-
   &:before {
     content: "";
     display: block;
-    width: 20vw;
-    height: 20vw;
+    width: 11.5rem;
+    height: 11.5rem;
     position: absolute;
-    top: 10%;
-    right: 70%;
+    top: 2rem;
+    right: 4.5rem;
     background-color: var(--color-surface-white);
-    border-radius: 20vw;
+    border-radius: 11.5rem;
     transition: all 0.4s;
     z-index: -1;
   }
 
   &:hover {
-    &::before {
+    &:before {
       top: -130%;
       transform: translateX(70%);
     }

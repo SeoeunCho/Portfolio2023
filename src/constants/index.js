@@ -40,7 +40,7 @@ export const skillsData = [
     label: "JavaScript, ES6, jQuery, React, Vue.js",
     desc: [
       "ES6와 jQuery를 활용해 DOM을 제어하고 AJAX로 데이터를 가져올 수 있습니다.",
-      "애니메이션 기능을 구현하여 웹 페이지를 더 생동감 있게 만들 수 있습니다.",
+      "애니메이션 기능을 구현하여 웹 페이지를 더 부드럽고 생동감 있게 만들 수 있습니다.",
       "reduce, map, filter 등 다양한 고차함수를 적극적으로 활용합니다.",
     ],
   },
@@ -50,7 +50,7 @@ export const skillsData = [
     desc: [
       "Vue.js 문법에 익숙하며 Vue3 버전의 <code>&#60;script setup&#62;</code> 문법으로 Composition-API를 더 효율적으로 사용할 수 있습니다.",
       "Lifecycle Hooks를 능숙하게 사용가능하며 DOM 제어에 익숙합니다.",
-      "Vuex 상태관리 라이브러리를 통해 자주 쓰이는 데이터와 함수 재사용이 가능합니다.",
+      "Vuex 상태관리 라이브러리를 통해 자주 쓰이는 데이터와 함수의 재사용이 가능합니다.",
     ],
   },
   {
@@ -80,84 +80,101 @@ export const skillsData = [
       "AWS Elastic Beanstalk에 Next.js서버를 배포할 수 있습니다.",
     ],
   },
-  {
-    title: "GraphQl",
-    label: "API, Resolvers, Apollo",
-    desc: [
-      "Express GraphQL Server를 생성할 수 있습니다.",
-      "Resolvers 모듈화를 할 수 있습니다.",
-      "Apollo Server 4로 마이그레이션하여 개인프로젝트를 만든 경험이 있습니다.",
-    ],
-  },
-  {
-    title: "상태관리",
-    label: "Redux, Recoil, ReactQuery",
-    desc: ["작성 전 입니다.", "작성 전 입니다.", "작성 전 입니다."],
-  },
-  {
-    title: "BackEnd & DB",
-    label: "Firebase, Node.js, Vercel",
-    desc: ["작성 전 입니다.", "작성 전 입니다.", "작성 전 입니다."],
-  },
+  // {
+  //   title: "GraphQL",
+  //   label: "API, Resolvers, Apollo",
+  //   desc: [
+  //     "Express GraphQL Server를 생성할 수 있습니다.",
+  //     "Resolvers 모듈화를 할 수 있습니다.",
+  //     "Apollo Server 4로 마이그레이션하여 개인프로젝트를 만든 경험이 있습니다.",
+  //   ],
+  // },
+  // {
+  //   title: "State Management",
+  //   label: "Redux, Recoil, MobX, ReactQuery, Zustand, Context API",
+  //   desc: ["작성 전 입니다.", "작성 전 입니다.", "작성 전 입니다."],
+  // },
+  // {
+  //   title: "BackEnd & DB",
+  //   label: "Firebase, Node.js, Prisma, Vercel, Express, GraphQL",
+  //   desc: ["작성 전 입니다.", "작성 전 입니다.", "작성 전 입니다."],
+  // },
+  // {
+  //   title: "CI/CD",
+  //   label: "Docker, Github Action, AWS CloudFront",
+  //   desc: ["작성 전 입니다.", "작성 전 입니다.", "작성 전 입니다."],
+  // },
 ];
 
 export const projectsData = [
   {
-    title: "Vue Site / Youtube, Unsplash, Movie & TV",
+    title: "뷰 사이트 / Youtube, Unsplash, Movie & TV",
     stack: "Vue.js, Sass, Responsive, WebStandard, CompositionAPI, Swiper.js, Netlify",
     video: vueSiteVideo,
     link: ["https://github.com/SeoeunCho/site2023-vue", "https://seoeun-vuesite.netlify.app/"],
   },
   {
-    title: "Twitter Site Disney",
-    stack: "React, TypeScript, Redux",
+    title: "트위터 사이트 / React CRUD",
+    stack: "React, Tailwind, Recoil, Firebase(auth, storage / 구글 로그인, 보안, 통신), Vercel",
     video: reactSiteVideo,
     link: ["code", "demo"],
   },
   {
-    title: "React Site / Youtube, Unsplash, Movie & TV",
-    stack: "React, Sass, Responsive, WebStandard, React-Router-Dom, Swiper.js, Netlify",
+    title: "맛집 지도 / Next.js",
+    stack: "Next.js, Tailwind, Prisma, Supabase, Next-auth, React-query, React-hook-form, Kakao map API, GoDaddy",
+    video: reactSiteVideo,
+    link: ["code", "demo"],
+  },
+  // {
+  //   title: "여행 예약 홈페이지 / React + TypeScript",
+  //   stack: "React, TypeScript, Recoil, Emotion, Firebase, Vercel",
+  //   video: reactSiteVideo,
+  //   link: ["code", "demo"],
+  // },
+  {
+    title: "청첩장 홈페이지 / React",
+    stack: "React, TypeScript, Sass, React-query, Firebase, ContextAPI",
+    video: reactSiteVideo,
+    link: ["code", "demo"],
+  },
+  {
+    title: "리엑트 사이트 / Youtube, Unsplash, Movie & TV",
+    stack: "React, Sass, Responsive, WebStandard, React Router Dom, Swiper.js, Netlify",
     video: reactSiteVideo,
     link: ["https://github.com/SeoeunCho/site2023-react", "https://seoeun-reactsite.netlify.app/"],
   },
+  // {
+  //   title: "To Do App / GraphQL",
+  //   stack: "GraphQL, Tailwind, Apollo Client, useMutation",
+  //   video: reactSiteVideo,
+  //   link: ["code", "demo"],
+  // },
+  // {
+  //   title: "ToDo App / GraphQL, CI/CD",
+  //   stack: "Docker, Github Action, AWS CloudFront",
+  //   video: reactSiteVideo,
+  //   link: ["code", "demo"],
+  // },
   {
-    title: "Next.js",
-    stack: "Next.js",
-    video: reactSiteVideo,
-    link: ["code", "demo"],
-  },
-  {
-    title: "GraphQL",
-    stack: "GraphQL",
-    video: reactSiteVideo,
-    link: ["code", "demo"],
-  },
-  {
-    title: "CI/CD",
-    stack: "Docker, Recoil",
-    video: reactSiteVideo,
-    link: ["code", "demo"],
-  },
-  {
-    title: "GCiMED / Renewal Site",
+    title: "GC녹십자아이메드 / Renewal Site",
     stack: "HTML/CSS, JavaScript, jQuery",
     video: renewalSite01Video,
     link: ["https://github.com/SeoeunCho/renewal1", "https://seoeuncho.github.io/renewal1/"],
   },
   {
-    title: "espoir / Renewal Site",
+    title: "에스쁘아 / Renewal Site",
     stack: "HTML/CSS, JavaScript, jQuery",
     video: renewalSite02Video,
     link: ["https://github.com/SeoeunCho/renewal2", "https://seoeuncho.github.io/renewal2"],
   },
   {
-    title: "Megabox / WebStandard Site",
+    title: "메가박스 / WebStandard Site",
     stack: "HTML/CSS, Responsive, JavaScript, jQuery, Swiper.js, Youtube API",
     video: megaboxSiteVideo,
     link: ["https://github.com/SeoeunCho/MegaboxSite", "https://seoeuncho.github.io/MegaboxSite/"],
   },
   {
-    title: "Portfolio Site",
+    title: "포트폴리오 사이트",
     stack: "HTML/CSS, Responsive, JavaScript, jQuery",
     video: portfolioSiteVideo,
     link: ["https://github.com/SeoeunCho/Portfolio01", "https://seoeuncho.github.io/Portfolio01/"],

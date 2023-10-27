@@ -2,7 +2,7 @@
 
 이 포트폴리오는 자기소개와 그동안 작업한 프로젝트들을 담은 React 사이트입니다.
 웹표준을 준수하며, Sass와 Media Query를 사용해 어떤 기기에도 대응하는 반응형으로 작업했습니다.
-Prettier, ESlint를 이용해 문법에 오류가 없도록 작업하며 코드정리를 하였습니다.
+React Router Dom를 사용하여 SPA에서 화면 전환을 구현했습니다.
 
 ![image](https://github.com/SeoeunCho/Portfolio2023/blob/main/src/assets/img/screenshot/portfolio2023-web01.png?raw=true)
 
