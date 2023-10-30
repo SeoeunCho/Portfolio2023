@@ -50,7 +50,7 @@ const Projects = () => {
           spaceBetween={0}
           navigation={true}
           breakpoints={{
-            768: {
+            900: {
               slidesPerView: 3,
             },
           }}
@@ -77,24 +77,17 @@ const Projects = () => {
               <p>&#123;{projectsData[swiperIdx].stack}&#125;</p>
             </div>
             <div className="projects__menu-item--button">
-              <a href={projectsData[swiperIdx].link[0]} target="_blank" className="button" data-block="button" rel="noreferrer">
-                <span className="button__label">Get Code</span>
+              <a href={projectsData[swiperIdx].link[0]} target="_blank" className="button-demo" data-block="button" rel="noreferrer">
+                <span className="button__label">Demo</span>
+                <span className="button__label-arrow"></span>
               </a>
               <a href={projectsData[swiperIdx].link[1]} target="_blank" className="button" data-block="button" rel="noreferrer">
-                <span className="button__label">Check Demo</span>
+                <span className="button__label pc">View Code for this Project</span>
+                <span className="button__label mobile">Github</span>
               </a>
             </div>
           </div>
         </Swiper>
-
-        {/* <div className="projects__controls">
-          <button className="button prev" aria-label="Previous" data-block="button">
-            <span className="button__icon button__icon-left">btn</span>
-          </button>
-          <button className="button next" aria-label="Next" data-block="button">
-            <span className="button__icon button__icon-right">btn</span>
-          </button>
-        </div> */}
       </div>
     </section>
   );

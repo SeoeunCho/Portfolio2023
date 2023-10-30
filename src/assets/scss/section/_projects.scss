@@ -74,7 +74,7 @@
         }
       }
       .swiper-button-prev {
-        left: 61.2%;
+        left: 61.3%;
         width: 51px;
         height: 51px;
 
@@ -161,17 +161,55 @@
       }
 
       .projects__menu-item--button {
-        .button {
+        a {
+          display: inline-flex;
           font-size: max(1rem, min(0.38835vw + 0.908981rem, 1.375rem));
           padding: 0.9375rem 1.5rem;
           border: 0.125rem solid var(--color-surface-white);
+          line-height: 1.04545;
 
+          .button__label {
+            padding-top: 2px;
+
+            &.mobile {
+              display: none;
+            }
+          }
+
+          .button__label-arrow {
+            background-color: currentColor;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            margin-top: -2px;
+            transition: color 50ms var(--ease-in-out-quart);
+            width: 1.3rem;
+            height: 1.3rem;
+            -webkit-mask: url(../../img/arrow_btn.svg);
+          }
+        }
+
+        .button-demo {
+          border-radius: 6.25rem;
+          font-weight: 600;
+          letter-spacing: -0.01em;
+          background-color: var(--color-surface-white);
+          color: var(--color-just-black);
+          margin-right: 10px;
+
+          .button__label {
+            margin-right: 0.363636em;
+          }
+        }
+
+        .button {
           &:before {
-            width: 12rem;
-            height: 12rem;
-            border-radius: 12rem;
+            width: 22rem;
+            height: 22rem;
+            border-radius: 22rem;
             top: 4rem;
-            right: 8rem;
+            right: 14rem;
           }
 
           &:hover {
@@ -180,81 +218,13 @@
               transform: translateX(70%);
             }
           }
-
-          .button__label {
-            padding-top: 2px;
-          }
-
-          &:nth-child(1) {
-            margin-right: 10px;
-          }
-        }
-      }
-    }
-
-    .projects__controls {
-      display: flex;
-      height: 51px;
-      // background-color: aliceblue;
-      position: absolute;
-      bottom: 0;
-      left: 110%;
-
-      .button {
-        background-color: transparent;
-        width: 51px;
-        height: 51px;
-        box-sizing: border-box;
-        border: 2px solid #fff;
-        --button-stroke: var(--color-surface-white);
-        --button-hoverColor: var(--color-just-black);
-
-        &:nth-child(1) {
-          margin-right: 12px;
-        }
-
-        .button__icon {
-          background-color: currentColor;
-          background-position: 50%;
-          background-repeat: no-repeat;
-          background-size: contain;
-          display: inline-block;
-          height: 1.5rem;
-          transition: color 50ms var(--ease-in-out-quart);
-          width: 1.5rem;
-        }
-
-        &:hover {
-          .button__icon-left {
-            transition: all 0.1s;
-            color: #000;
-            background-color: #000;
-          }
-
-          .button__icon-right {
-            transition: all 0.1s;
-            color: #000;
-            background-color: #000;
-          }
-        }
-
-        .button__icon-left {
-          width: 26px;
-          height: 26px;
-          -webkit-mask: url(../../img/prev_btn.svg);
-        }
-
-        .button__icon-right {
-          width: 26px;
-          height: 26px;
-          -webkit-mask: url(../../img/next_btn.svg);
         }
       }
     }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .home-projects .projects__wrap {
     margin: 0 auto;
     top: -22px;
@@ -284,16 +254,39 @@
 
   .swiper-button-prev {
     margin-right: 10px;
-    left: 79vw !important;
+    left: 80.5vw !important;
   }
 
   .swiper-button-next {
-    left: 79vw !important;
+    left: 80.5vw !important;
+  }
+}
+
+@media (max-width: 780px) {
+  .swiper-button-prev {
+    left: 78.7vw !important;
+  }
+
+  .swiper-button-next {
+    left: 78.7vw !important;
+  }
+
+  .projects__menu-item--button {
+    .button {
+      .button__label {
+        &.pc {
+          display: none;
+        }
+        &.mobile {
+          display: inline-block !important;
+        }
+      }
+    }
   }
 }
 
 /* 모바일 세로 (해상도 ~ 479px)*/
-@media (max-width: 500px) {
+@media (max-width: 620px) {
   .swiper-button-prev {
     left: 71vw !important;
   }
