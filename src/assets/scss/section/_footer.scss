@@ -1,86 +1,104 @@
 .footer {
-  background-color: var(--color-surface-white);
+  // background-color: var(--color-surface-white);
   color: var(--color-just-black);
 
   .container {
-    padding-bottom: max(3rem, min(1.0356vw + 2.75728rem, 4rem));
-    padding-top: max(3rem, min(1.0356vw + 2.75728rem, 4rem));
+    height: 200px;
+    position: relative;
+    z-index: 2;
 
-    .footer-top {
-      @include flex-between;
-
-      .profile-img {
-        display: flex;
-        height: 100%;
-
-        > div {
-          width: 200px;
-          height: 200px;
-          margin-right: 40px;
-          position: relative;
-
-          img {
-            width: 200px;
-            height: 200px;
-            max-width: 100%;
-            border-radius: 100%;
-            vertical-align: top;
-            object-fit: cover;
-
-            &:nth-child(2) {
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              width: 40%;
-              height: auto;
-              right: 0;
-              bottom: 25%;
-              transform: translate(25%, 50%);
-            }
-          }
-        }
-
-        .profile-info {
-          position: relative;
-
-          div {
-            @include position-horizon-center;
-
-            h3 {
-              font-size: 2rem;
-              margin-bottom: 20px;
-            }
-
-            p {
-              line-height: 1.3rem;
-            }
-          }
-        }
-      }
-
-      .site-menu {
-        display: flex;
-        height: 100%;
-        padding-top: max(3rem, min(1.0356vw + 2.75728rem, 4rem));
-
-        div {
-          &:nth-child(1) {
-            margin-right: 50px;
-          }
-
-          p {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 30px;
-          }
-          a {
-            display: block;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 2rem;
-          }
+    .footer__inner {
+      &:before {
+        @media only screen and (min-width: 48rem) {
+          background-color: var(--color-surface25);
+          content: "";
+          height: 0.0625rem;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
         }
       }
     }
+
+    // padding-bottom: max(3rem, min(1.0356vw + 2.75728rem, 4rem));
+    // padding-top: max(3rem, min(1.0356vw + 2.75728rem, 4rem));
+
+    // .footer-top {
+    //   @include flex-between;
+
+    //   .profile-img {
+    //     display: flex;
+    //     height: 100%;
+
+    //     > div {
+    //       width: 200px;
+    //       height: 200px;
+    //       margin-right: 40px;
+    //       position: relative;
+
+    //       img {
+    //         width: 200px;
+    //         height: 200px;
+    //         max-width: 100%;
+    //         border-radius: 100%;
+    //         vertical-align: top;
+    //         object-fit: cover;
+
+    //         &:nth-child(2) {
+    //           position: absolute;
+    //           bottom: 0;
+    //           right: 0;
+    //           width: 40%;
+    //           height: auto;
+    //           right: 0;
+    //           bottom: 25%;
+    //           transform: translate(25%, 50%);
+    //         }
+    //       }
+    //     }
+
+    //     .profile-info {
+    //       position: relative;
+
+    //       div {
+    //         @include position-horizon-center;
+
+    //         h3 {
+    //           font-size: 2rem;
+    //           margin-bottom: 20px;
+    //         }
+
+    //         p {
+    //           line-height: 1.3rem;
+    //         }
+    //       }
+    //     }
+    //   }
+
+    //   .site-menu {
+    //     display: flex;
+    //     height: 100%;
+    //     padding-top: max(3rem, min(1.0356vw + 2.75728rem, 4rem));
+
+    //     div {
+    //       &:nth-child(1) {
+    //         margin-right: 50px;
+    //       }
+
+    //       p {
+    //         font-size: 16px;
+    //         font-weight: 600;
+    //         margin-bottom: 30px;
+    //       }
+    //       a {
+    //         display: block;
+    //         font-size: 18px;
+    //         font-weight: 600;
+    //         line-height: 2rem;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }

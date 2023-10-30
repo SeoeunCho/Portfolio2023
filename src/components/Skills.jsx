@@ -45,7 +45,20 @@ const Skills = () => {
               {skillsData.map((skill, i) => (
                 <li className="skills__panel" key={i} ref={(el) => (sectionRef.current[i] = el)}>
                   <div className="skills__content">
-                    <h3 className="skills__heading">{skill.title}</h3>
+                    <h3 className="skills__heading">
+                      {skill.title}
+                      {skill.logo.length !== 0 && i !== 1 ? (
+                        <div className="skills__logo">
+                          <img src={skill.logo[0]} alt="logo" />
+                        </div>
+                      ) : null}
+                      {i === 1 ? (
+                        <div className="skills__logo htmlcss">
+                          <img src={skill.logo[0]} alt="logo" />
+                          <img src={skill.logo[1]} alt="logo" />
+                        </div>
+                      ) : null}
+                    </h3>
                     {skill.label ? (
                       <div className="skills__label">
                         <p>&#123;{skill.label}&#125;</p>

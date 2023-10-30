@@ -92,7 +92,7 @@ const Career = () => {
                 </a>
               </ul>
               <ul>
-                <li>디지털매거진</li>
+                <li>디지털 매거진</li>
                 <a href="https://enchanting-drip-66d.notion.site/ee9109e5a2ac43989d9ae586f94223cd" target="_blank" rel="noreferrer">
                   <ul>
                     <li>
@@ -115,7 +115,7 @@ const Career = () => {
               </ul>
               <ul>
                 <li>
-                  스마트골퍼클럽
+                  스마트 골퍼클럽
                   <br />
                   모집
                 </li>

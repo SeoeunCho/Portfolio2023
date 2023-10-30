@@ -1,3 +1,11 @@
+import skillHTML from "../assets/img/skill_html.png";
+import skillCSS from "../assets/img/skill_css.png";
+import skillJS from "../assets/img/skill_javascript.png";
+import skillVue from "../assets/img/skill_vue.png";
+import skillReact from "../assets/img/skill_react.png";
+import skillTS from "../assets/img/skill_typescript.png";
+import skillNextjs from "../assets/img/skill_nextjs.png";
+
 import vueSiteVideo from "../assets/videos/vue_site.mp4";
 import reactSiteVideo from "../assets/videos/react_site.mp4";
 import renewalSite01Video from "../assets/videos/gcimed_site.mp4";
@@ -25,6 +33,7 @@ export const skillsData = [
       "협업툴(Slack, Jira, Confluence) 사용에 익숙합니다.",
       "새로운 기술에 호기심이 많고 도전하여 얻은 경험을 공유하고 함께 성장하는 것을 즐깁니다.",
     ],
+    logo: [],
   },
   {
     title: "HTML/CSS",
@@ -34,6 +43,7 @@ export const skillsData = [
       "Sass와 CSS 프레임워크(Bootstrap, Tailwind)를 활용해 레이아웃과 디자인을 구현할 수 있습니다.",
       "Media Query를 사용해 어떤 기기에도 대응하는 반응형 웹을 만들 수 있습니다.",
     ],
+    logo: [skillHTML, skillCSS],
   },
   {
     title: "JavaScript",
@@ -43,6 +53,7 @@ export const skillsData = [
       "애니메이션 기능을 구현하여 웹 페이지를 더 부드럽고 생동감 있게 만들 수 있습니다.",
       "reduce, map, filter 등 다양한 고차함수를 적극적으로 활용합니다.",
     ],
+    logo: [skillJS]
   },
   {
     title: "Vue.js",
@@ -52,6 +63,7 @@ export const skillsData = [
       "Lifecycle Hooks를 능숙하게 사용가능하며 DOM 제어에 익숙합니다.",
       "Vuex 상태관리 라이브러리를 통해 자주 쓰이는 데이터와 함수의 재사용이 가능합니다.",
     ],
+    logo: [skillVue]
   },
   {
     title: "React",
@@ -61,6 +73,7 @@ export const skillsData = [
       "React-Router-Dom을 사용하여 SPA 내부에서 페이지를 전환할 수 있습니다.",
       "Redux와 ContextAPI를 적절히 사용하여 State의 상태관리를 할 수 있습니다.",
     ],
+    logo: [skillReact]
   },
   {
     title: "TypeScript",
@@ -70,6 +83,7 @@ export const skillsData = [
       "때에 따라 interface와 type alias을 적절히 나누어 사용 할 수 있습니다.",
       "Utility Type들을 활용해 약간 복잡한 Type들을 생성하여 개발할 수 있습니다.",
     ],
+    logo: [skillTS]
   },
   {
     title: "Next.js",
@@ -79,6 +93,7 @@ export const skillsData = [
       "Next.js 자동 라우팅 기능을 이용해 페이지 이동이 가능합니다.",
       "AWS Elastic Beanstalk에 Next.js서버를 배포할 수 있습니다.",
     ],
+    logo: [skillNextjs]
   },
   // {
   //   title: "GraphQL",

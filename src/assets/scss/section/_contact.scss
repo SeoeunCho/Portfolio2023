@@ -12,7 +12,7 @@
       border: 0.125rem solid transparent;
       border-radius: 1rem;
       padding: 2em 2em 3em 2em;
-      margin-bottom: max(3rem,min(1.0356vw + 2.75728rem,4rem));
+      margin-bottom: max(3rem, min(1.0356vw + 2.75728rem, 4rem));
     }
 
     .contact__wrap {
@@ -45,25 +45,38 @@
 
       .contact__content {
         .contact__title {
+          display: none;
           font-weight: 600;
           letter-spacing: -0.01em;
           line-height: 1;
           font-size: max(1.375rem, min(1.68285vw + 0.980583rem, 3rem));
 
           @media (min-width: 768px) {
-            // display: block;
+            display: block;
             margin: 0 0 25px;
           }
         }
 
         .contact__desc {
           padding-bottom: 25px;
+          text-align: center;
+
+          @media (min-width: 768px) {
+            text-align: left;
+          }
         }
 
         a {
           --button-fill: var(--gradient-macha);
           background: url(../../img/noise-button.png), var(--button-fill);
           color: var(--color-just-black);
+          display: block;
+          text-align: center;
+          width: 100%;
+
+          @media (min-width: 768px) {
+            width: fit-content;
+          }
         }
       }
     }

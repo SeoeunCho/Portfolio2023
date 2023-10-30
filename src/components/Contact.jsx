@@ -11,7 +11,7 @@ const Contact = () => {
             <div className="contact__content">
               <h1 className="contact__title">Contact Me</h1>
               <p className="contact__desc body-r">
-                끊임없이 스스로 업데이트하는 프론트엔드 개발자 조서은입니다.
+                꾸준히 업데이트하는 프론트엔드 개발자 조서은입니다.
                 <br />
                 궁금한 점이 있으시면 메일로 연락주세요.
               </p>

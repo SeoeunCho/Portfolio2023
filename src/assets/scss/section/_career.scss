@@ -78,7 +78,7 @@
             background: #343440;
             border-radius: 10px;
             padding: 10px;
-            width: 12%;
+            width: 13%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -86,6 +86,7 @@
             line-height: 22px;
             cursor: default;
             text-align: center;
+            word-break: keep-all;
           }
 
           &.worklist__all {
@@ -95,7 +96,7 @@
         }
 
         > a {
-          width: 90%;
+          width: 87%;
           padding: 0 10px;
           margin-left: 10px;
           transition: 0.25s;
@@ -151,7 +152,6 @@
                 transition: 0.25s;
                 color: #000;
                 background: rgba(227, 226, 224, 0.5);
-                // background: rgb(229, 231, 237);
                 border-radius: 5px;
                 padding: 5px 10px 2px 10px;
                 height: 100%;
@@ -168,6 +168,34 @@
                 &.js {
                   background: rgb(253, 236, 200);
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 915px) {
+  .home-career__inner {
+    .docs-hero__content {
+      .career__items {
+        > ul {
+          > li {
+            &:first-child {
+              width: 23%;
+            }
+          }
+
+          > a {
+            width: 77%;
+
+            > ul {
+              display: grid;
+
+              > li {
+                width: 100% !important;
               }
             }
           }

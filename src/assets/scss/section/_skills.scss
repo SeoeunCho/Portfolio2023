@@ -91,11 +91,32 @@
           z-index: 2;
 
           .skills__heading {
+            position: relative;
             -webkit-text-fill-color: transparent;
             background: var(--panel-theme);
             -webkit-background-clip: text;
             background-clip: text;
+            font-size: 1.6rem;
+
+            .skills__logo {
+              display: flex;
+              position: absolute;
+              top: 0px;
+              right: 0;
+              width: 25px;
+
+              &.htmlcss {
+                right: 28px;
+
+                img {
+                  &:nth-child(1) {
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
           }
+
           .skills__label {
             color: var(--color-surface50);
             font-size: 0.875rem;
