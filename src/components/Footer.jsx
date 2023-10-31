@@ -6,47 +6,25 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer__inner"></div>
-        {/* <div className="footer-top">
-          <div className="profile-img">
-            <div>
-              <img src={profileImg} alt="조서은" />
-              <img src={blueStarImg} alt="" />
-            </div>
-            <div className="profile-info">
-              <div>
-                <h3>조서은</h3>
-                <p>1995. 12. 14</p>
-                <p>Front-End Developer</p>
-                <p> jowestsilver@gmail.com</p>
-              </div>
-            </div>
+        <div className="footer__inner">
+          <div className="footer_icon">
+            <a href="https://github.com/SeoeunCho" className="github" target="_blank" rel="noreferrer">
+              <span className="visually-hidden">github</span>
+            </a>
+            <a
+              href="https://enchanting-drip-66d.notion.site/Secho-661e000688d04abf94686ae02d8983ff?pvs=4"
+              className="notion"
+              target="_blank"
+              rel="noreferrer">
+              <span className="visually-hidden">notion</span>
+            </a>
+            <a href="https://open.kakao.com/o/sTuSneIf" className="kakao" target="_blank" rel="noreferrer">
+              <span className="visually-hidden">kakao</span>
+            </a>
           </div>
-
-          <div className="site-menu">
-            <div>
-              <p>Site Map</p>
-              <a href="#about">About</a>
-              <a href="#skills">Skills</a>
-              <a href="#projects">Projects</a>
-              <a href="#career">Career</a>
-              <a href="#contact">Contact</a>
-            </div>
-            <div>
-              <p>Contact</p>
-              <a href="#about">Github</a>
-              <a href="#skills">Notion Resume</a>
-              <a href="#projects">Another Portfolio</a>
-              <a href="#career">KakaoTalk</a>
-            </div>
-          </div>
-        </div> */}
-      </div>
-      {/* <div className="footer-copy">
-        <div className="container body-s">
-          <p className="footer-copy__text">&copy;2023 SeoeunCho, Inc. All rights reserved.</p>
+          <div className="footer_copyright">© 2023. Cho Seo Eun. All rights reserved.</div>
         </div>
-      </div> */}
+      </div>
     </footer>
   );
 };
