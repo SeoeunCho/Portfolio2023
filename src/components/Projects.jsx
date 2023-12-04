@@ -93,9 +93,9 @@ const Projects = () => {
                     </svg>
                     <ul className="header__dropdown-menu header__dropdown-menu--1">
                       <li className="header__menu-item">
-                        <a href="/" className="header__dropdown-link" aria-current="page">
+                        <div className="header__dropdown-link">
                           {projectsData[swiperIdx].info}
-                        </a>
+                        </div>
                       </li>
                     </ul>
                   </div>

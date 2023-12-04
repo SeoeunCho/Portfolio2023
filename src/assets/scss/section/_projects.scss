@@ -63,18 +63,17 @@
               display: none;
               opacity: 0;
               position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
+              top: -1px;
+              left: -1px;
+              width: 101%;
               height: 100%;
               background-color: rgba(0, 0, 0, 0.8);
-              border-radius: 0.5rem;
               font-size: 18px;
               line-height: 2rem;
 
               > div {
                 @include position-center;
-                width: 70%;
+                width: 83%;
               }
             }
           }
@@ -181,7 +180,8 @@
         }
 
         .projects__info {
-          position: relative;
+          position: absolute;
+          right: 70%;
           z-index: 10;
 
           .icon {
@@ -203,6 +203,7 @@
             transform: translateY(32px);
             transition: transform 0.15s var(--ease-in), opacity 0.15s var(--ease-in), visibility 0s 0.15s;
             visibility: hidden;
+            line-height: 24px;
 
             &:before {
               background-color: rgba(0, 0, 0, 0.35);
@@ -219,14 +220,14 @@
             }
 
             &.header__dropdown--tools {
-              left: calc(50% - 28.375rem);
+              left: calc(50% - 32.375rem);
 
               .header__dropdown-wrapper {
                 width: 35.875rem;
                 // word-break: keep-all;
 
                 .header__dropdown-notch {
-                  left: 28.25rem;
+                  left: 32.25rem;
                   transform: translate(-50%, -100%);
                 }
               }
@@ -272,7 +273,7 @@
         a {
           display: inline-flex;
           font-size: max(1rem, min(0.38835vw + 0.908981rem, 1.375rem));
-          padding: 0.9375rem 1.5rem;
+          padding: 0.9375rem 1.5rem 0.8rem;
           border: 0.125rem solid var(--color-surface-white);
           line-height: 1.04545;
 
@@ -345,12 +346,21 @@
     margin-bottom: 3rem;
   }
 
-  .home-projects .projects__wrap .swiper .swiper-wrapper .swiper-slide.swiper-slide-active {
+  .home-projects
+    .projects__wrap
+    .swiper
+    .swiper-wrapper
+    .swiper-slide.swiper-slide-active {
     top: -0.5vw;
   }
 
-  .home-projects .projects__wrap .swiper .swiper-wrapper .swiper-slide .projects-item {
-    width: 97%;
+  .home-projects
+    .projects__wrap
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .projects-item {
+    width: 100%;
     margin: 0 auto;
   }
 

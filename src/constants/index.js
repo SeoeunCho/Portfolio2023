@@ -7,6 +7,7 @@ import skillTS from "../assets/img/skill_typescript.png";
 import skillNextjs from "../assets/img/skill_nextjs.png";
 
 import vueSiteVideo from "../assets/videos/vue_site.mp4";
+import twitterSiteVideo from "../assets/videos/twitter_site.mp4";
 import reactSiteVideo from "../assets/videos/react_site.mp4";
 import renewalSite01Video from "../assets/videos/gcimed_site.mp4";
 import renewalSite02Video from "../assets/videos/espoir_site.mp4";
@@ -126,22 +127,29 @@ export const projectsData = [
     title: "뷰 사이트 / Youtube, Unsplash, Movie 반응형 웹",
     stack: "Vue.js, Sass, CompositionAPI, Swiper.js, Netlify",
     video: vueSiteVideo,
-    link: ["https://seoeun-vuesite.netlify.app/", "https://github.com/SeoeunCho/site2023-vue"],
-    info: "이 프로젝트는 여러 가지 API사용에 익숙해지는 과정을 담은 Vue.js 사이트입니다. Youtube, Unsplash, TMDB(The Movie Database) API를 Postman사이트를 이용하여 데이터를 분류하고 그 중에서 원하는 데이터만 가져와 사용했습니다. 유튜브 영상 / 이미지 / 영화 목록과 검색이 가능합니다. 웹표준을 준수하며, Sass와 Media Query를 사용해 어떤 기기에도 대응하는 반응형으로 작업했습니다. Prettier, ESlint를 이용해 문법에 오류가 없도록 작업하며 코드정리를 하였습니다.",
+    link: [
+      "https://seoeun-vuesite.netlify.app/",
+      "https://github.com/SeoeunCho/site2023-vue",
+    ],
+    info: "🧩 Vue.js로 제작한 사이트로 다양한 API사용에 익숙해지는 과정을 담은 프로젝트입니다. Youtube, Unsplash, TMDB(The Movie Database) API를 Postman사이트를 이용하여 데이터를 분류하고 그 중에서 원하는 데이터만 가져와 사용했습니다. 유튜브 영상 / 이미지 / 영화 목록 조회와 검색이 가능합니다. 웹표준을 준수하며, Sass와 Media Query를 사용해 어떤 기기에도 대응하는 반응형으로 작업했습니다. Prettier, ESlint를 이용해 문법에 오류가 없도록 작업하며 코드정리를 하였습니다.",
   },
   {
-    title: "트위터 사이트 / React SNS 실시간 데이터 업데이트",
-    stack: "React, Tailwind, Recoil, Firebase(auth, storage / 구글 로그인, 보안, 통신), Vercel",
-    video: reactSiteVideo,
-    link: ["demo", "code"],
-    info: "이 프로젝트는 반응형 웹 개발 프로젝트 실시간 트위터 프로젝트입니다.",
+    title: "트위터 사이트 / React SNS 반응형 웹",
+    stack: "React, TypeScript, Redux, Recoil, Firebase, Vercel",
+    video: twitterSiteVideo,
+    link: [
+      "https://react-twitter-nine.vercel.app/",
+      "https://github.com/SeoeunCho/react-twitter",
+    ],
+    info: "🐦 React에서 Firebase와 Redux를 연습하며 익숙해지기 위해 제작한 반응형 앱입니다. Firebase를 이용하여 데이터를 생성하고 사용자 인증에서 회원가입 및 로그인을 구축하고 CRUD를 구현하여 게시글 등록, 답글, 리트윗, 좋아요 등의 소셜 SNS 기능 및 실시간 업데이트와 알림목록을 생성했습니다. Sass와 Media Query를 사용해 어떤 기기에도 모바일에 대응하는 반응형으로 작업했습니다. 전역 상태 라이브러리 Recoil로 한국어/영어 언어 변경 기능을 추가하고 Vercel로 배포했습니다.",
   },
   {
     title: "맛집 지도 홈페이지 / Next.js SSR 외부 API 사용",
-    stack: "Next.js, Tailwind, Prisma, Supabase, Next-auth, React-query, React-hook-form, Kakao map API, GoDaddy",
+    stack:
+      "Next.js, TypeScript, Tailwind, Prisma, Supabase, Next-auth, React-query, React-hook-form, Recoil, Kakao map API, GoDaddy, Google Analytics, Vercel",
     video: reactSiteVideo,
-    link: ["demo", "code"],
-    info: "이 프로젝트는 Next.js 완벽 학습을 위한 맛집 지도 프로젝트입니다.",
+    link: ["demo", "https://github.com/SeoeunCho/next-eatmap"],
+    info: "📍 이 프로젝트는 Next.js 구조 및 SSR 개념을 이해하기 위해 제작한 맛집 지도 프로젝트입니다. Next.js의 API Routes를 기반으로 API를 호출하고 Prisma & Supabase를 통해 직접 API를 설계하고 React Query를 이용해 서버 상태 관리하고 infinite scroll을 이용해 무한 스크롤을 구현했습니다. getStaticProps로 맛집 목록 공공데이터를 가져와 Kakao Map API를 연동하여 지도 위에 마커가 표시되고 클릭하여 상세 정보를 확인할 수 있습니다. Next-Auth를 이용하여 사용자 인증 및 SNS 로그인을 구현했습니다. Recoil을 이용해 키워드 검색 및 정렬, 지도 마커의 상태관리를 처리했습니다. Velcel에 Github 연동하여 자동으로 배포하고 GoDaddy에서 도메인을 연결하고 Google Analytics 적용했습니다. Like API로 찜하기 기능을 설계하고, Comment API로 댓글 기능을 설계하고, Geolocation API로 사용자의 현재 위치를 기반으로 정보를 가져올 수 있습니다. SSR을 구현했습니다. SEO(검색 엔진 최적화)",
   },
   // {
   //   title: "여행 예약 홈페이지 / React + TypeScript",
@@ -150,19 +158,22 @@ export const projectsData = [
   //   link: ["demo", "code"],
   //   info: "",
   // },
-  {
-    title: "청첩장 홈페이지 / React 멀티미디어 콘텐츠 최적화",
-    stack: "React, TypeScript, Sass, React-query, Firebase, ContextAPI",
-    video: reactSiteVideo,
-    link: ["demo", "code"],
-    info: "이 프로젝트는 웹 어플리케이션의 주요 리소스 최적화로 파일 크리를 줄이는 방법을 학습하기 위해 만들었습니다.",
-  },
+  // {
+  //   title: "청첩장 홈페이지 / React TypeScript 멀티미디어 콘텐츠 최적화",
+  //   stack: "React, TypeScript, Sass, React-query, Firebase, ContextAPI",
+  //   video: reactSiteVideo,
+  //   link: ["demo", "code"],
+  //   info: "이 프로젝트는 웹 어플리케이션의 주요 리소스 최적화로 파일 크리를 줄이는 방법을 학습하기 위해 만들었습니다.",
+  // },
   {
     title: "리액트 사이트 / Youtube, Unsplash, Movie 반응형 웹",
     stack: "React, Sass, React Router Dom, Swiper.js, Netlify",
     video: reactSiteVideo,
-    link: ["https://seoeun-reactsite.netlify.app/", "https://github.com/SeoeunCho/site2023-react"],
-    info: "이 프로젝트는 여러 가지 API사용에 익숙해지는 과정을 담은 React 사이트입니다. Youtube, Unsplash, TMDB(The Movie Database) API를 Postman사이트를 이용하여 데이터를 분류하고 그 중에서 원하는 데이터만 가져와 사용했습니다. 유튜브 영상 / 이미지 / 영화 목록과 검색이 가능합니다. 웹표준을 준수하며, Sass와 Media Query를 사용해 어떤 기기에도 대응하는 반응형으로 작업했습니다. Prettier, ESlint를 이용해 문법에 오류가 없도록 작업하며 코드정리를 하였습니다.",
+    link: [
+      "https://seoeun-reactsite.netlify.app/",
+      "https://github.com/SeoeunCho/site2023-react",
+    ],
+    info: "💎 React로 제작한 사이트로 뷰 사이트와 동일하며 여러 가지 API사용에 익숙해지는 과정을 담은 프로젝트입니다. Youtube, Unsplash, TMDB (The Movie Database) API를 호출해서 데이터를 가져와 유튜브 영상 / 이미지 / 영화 목록 조회와 검색이 가능합니다. 웹표준을 준수하며, Sass와 Media Query를 사용해 어떤 기기에도 대응하는 반응형으로 작업했습니다. Prettier, ESlint를 이용해 문법에 오류가 없도록 작업하며 코드정리를 하였습니다.",
   },
   // {
   //   title: "To Do App / GraphQL",
@@ -179,31 +190,43 @@ export const projectsData = [
   //   info: "",
   // },
   {
-    title: "GC녹십자아이메드 사이트 / 웹표준 준수 리뉴얼 웹",
+    title: "GC녹십자아이메드 사이트 / 리뉴얼 웹",
     stack: "HTML/CSS, JavaScript, jQuery",
     video: renewalSite01Video,
-    link: ["https://seoeuncho.github.io/renewal1/", "https://github.com/SeoeunCho/renewal1"],
-    info: "GC녹십자아이메드 사이트를 리뉴얼했습니다. 처음으로 제작한 웹사이트라서 꽤 긴 시간을 들여서 작업했습니다. 우선 현 사이트는 남녀노소, 나이불문 다양한 사용자가 이용하기 때문에 전 국민이 편리하게 이용하는 국민건강보험공단 사이트의 디자인을 참고하여 개발했습니다. 빠른 정보취득을 위한 검색창과 퀵메뉴, 탭메뉴를 구성하고 아이콘을 많이 배치해 빠른 의미전달을 돕고자 했습니다. 부드럽고 깔끔한 이미지를 주기 위해 둥근 테두리를 사용하고 로고의 색상을 가져와 통일감을 주었습니다.",
+    link: [
+      "https://seoeuncho.github.io/renewal1/",
+      "https://github.com/SeoeunCho/renewal1",
+    ],
+    info: "💉 GC녹십자아이메드 사이트를 리뉴얼했습니다. 처음으로 제작한 웹사이트라서 꽤 긴 시간을 들여서 작업했습니다. 우선 현 사이트는 남녀노소, 나이불문 다양한 사용자가 이용하기 때문에 전 국민이 편리하게 이용하는 국민건강보험공단 사이트의 디자인을 참고하여 개발했습니다. 빠른 정보취득을 위한 검색창과 퀵메뉴, 탭메뉴를 구성하고 아이콘을 많이 배치해 빠른 의미전달을 돕고자 했습니다. 부드럽고 깔끔한 이미지를 주기 위해 둥근 테두리를 사용하고 로고의 색상을 가져와 통일감을 주었습니다.",
   },
   {
-    title: "에스쁘아 사이트 / 웹표준 준수 리뉴얼 웹",
+    title: "에스쁘아 사이트 / 리뉴얼 웹",
     stack: "HTML/CSS, JavaScript, jQuery",
     video: renewalSite02Video,
-    link: ["https://seoeuncho.github.io/renewal2", "https://github.com/SeoeunCho/renewal2"],
-    info: "에스쁘아 사이트를 리뉴얼했습니다. 에스쁘아의 웹사이트를 통해 제품의 광고효과와 수익창출을 높일 수 있도록 리뉴얼한 작업물입니다. 다양한 상품을 섹션별로 배치하였으며 장바구니/구매/찜하기 아이콘을 배치하였습니다. Overview까지 제작했습니다.",
+    link: [
+      "https://seoeuncho.github.io/renewal2",
+      "https://github.com/SeoeunCho/renewal2",
+    ],
+    info: "💄 에스쁘아 사이트를 리뉴얼했습니다. 에스쁘아의 웹사이트를 통해 제품의 광고효과와 수익창출을 높일 수 있도록 리뉴얼한 작업물입니다. 다양한 상품을 섹션별로 배치하였으며 장바구니/구매/찜하기 아이콘을 배치하였습니다. Overview까지 제작했습니다.",
   },
   {
     title: "메가박스 사이트 / 웹표준 준수 반응형 웹",
     stack: "HTML/CSS, JavaScript, jQuery, Swiper.js, Youtube API",
     video: megaboxSiteVideo,
-    link: ["https://seoeuncho.github.io/MegaboxSite/", "https://github.com/SeoeunCho/MegaboxSite"],
-    info: "메가박스 반응형 사이트입니다. 웹표준을 준수하며 모든 기기에 유연하게 대응하는 반응형 사이트입니다. Swiper 플러그인을 적용하여 배너와 차트 탭, 이미지 슬라이드, 동영상 등 다양하면서도 편리한 기능을 담은 기업형 웹사이트로 작업했습니다.",
+    link: [
+      "https://seoeuncho.github.io/MegaboxSite/",
+      "https://github.com/SeoeunCho/MegaboxSite",
+    ],
+    info: "🎞️ 메가박스 반응형 사이트입니다. 웹표준을 준수하며 모든 기기에 유연하게 대응하는 반응형 사이트입니다. Swiper 플러그인을 적용하여 배너와 차트 탭, 이미지 슬라이드, 동영상 등 다양하면서도 편리한 기능을 담은 기업형 웹사이트로 작업했습니다.",
   },
   {
-    title: "포트폴리오 사이트 / 웹표준 준수 반응형 웹",
+    title: "포트폴리오 사이트 / 반응형 웹",
     stack: "HTML/CSS, JavaScript, jQuery",
     video: portfolioSiteVideo,
-    link: ["https://seoeuncho.github.io/Portfolio01/", "https://github.com/SeoeunCho/Portfolio01"],
-    info: "이 포트폴리오는 자기소개와 그동안 작업한 프로젝트들을 담은 첫 번째 포트폴리오 사이트입니다. 웹표준을 준수하며, 어떤 기기에도 대응하는 반응형으로 작업했습니다. Prettier, ESlint를 이용해 문법에 오류가 없도록 작업하며 코드정리를 하였습니다.",
+    link: [
+      "https://seoeuncho.github.io/Portfolio01/",
+      "https://github.com/SeoeunCho/Portfolio01",
+    ],
+    info: "🔮 첫 번째로 제작한 포트폴리오 사이트로 자기소개와 그동안 작업한 프로젝트들을 확인할 수 있습니다. 웹표준을 준수하며, 어떤 기기에도 대응하는 반응형으로 작업했습니다. CSS animation을 적극 활용하여 동적이고 재치있는 이미지들의 움직임이 보는 재미를 더합니다. JavaScript/jQuery 로 로딩화면, 사이드 메뉴을 구현했습니다.",
   },
 ];
