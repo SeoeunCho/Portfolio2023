@@ -39,9 +39,9 @@ Career 섹션에서 Notion에 상세히 기록한 경력기술서도 확인할 �
 ## Screenshots
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="./preview/mobile01.png" alt="image" width="32.3333%" height="auto">
-  <img src="./preview/mobile02.png" alt="image" width="32.3333%" height="auto">
-  <img src="./preview/mobile03.png" alt="image" width="32.3333%" height="auto">
+  <img src="./preview/mobile01.png" alt="image" width="32.3%" height="auto">
+  <img src="./preview/mobile02.png" alt="image" width="32.3%" height="auto">
+  <img src="./preview/mobile03.png" alt="image" width="32.3%" height="auto">
 </div>
 
 <img src="./preview/web02.png" alt="image" width="100%" height="auto">
