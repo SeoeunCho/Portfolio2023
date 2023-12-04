@@ -1,15 +1,15 @@
 # React 포트폴리오 사이트 (ver.2023)
 
-이 포트폴리오는 자기소개와 그동안 작업한 프로젝트들을 담은 React 사이트입니다.
-웹표준을 준수하며, Sass와 Media Query를 사용해 어떤 기기에도 대응하는 반응형으로 작업했습니다.
-React Router Dom를 사용하여 SPA에서 화면 전환을 구현했습니다.
+이 포트폴리오는 자기소개와 그동안 작업한 프로젝트들을 담은 `React`사이트입니다.
+웹표준을 준수하며, `Sass`와 `Media Query`를 사용해 어떤 기기에도 대응하는 반응형으로 작업했습니다.
+`GSAP`를 이용해 애니메이션을 구현하여 보는 재미를 더했습니다.
+Career 섹션에서 Notion에 상세히 기록한 경력기술서도 확인할 수 있습니다.
 
 <img src="./preview/web01.png" alt="preview" width="100%" />
 
-## 완성작 보기
+> 👉 포트폴리오 보러가기 : [DEMO](https://seoeun-portfolio2023.netlify.app/)<br>
 
-- 미리보기 : DEMO(https://seoeun-portfolio2023.netlify.app/)
-- 작업 기간 : 9일
+<br />
 
 ## 사용 스택
 
@@ -23,6 +23,8 @@ React Router Dom를 사용하여 SPA에서 화면 전환을 구현했습니다.
 - HTML, SCSS 기반으로 웹사이트의 기본 레이아웃 설계하고, 웹 표준 및 웹 접근성을 준수하여 작업합니다. <br />
   [ARIA(Accessible Rich Internet Applications)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
 
+<br />
+
 ## 프로젝트 실행
 
 - react를 설치합니다. `npx create-react-app 폴더명`
@@ -32,10 +34,17 @@ React Router Dom를 사용하여 SPA에서 화면 전환을 구현했습니다.
 - lenis를 설치합니다. `npm install @studio-freight/lenis`
 - react-player를 설치합니다. `npm i react-player`
 
+<br />
+
 ## Screenshots
 
-<div style="display: flex;">
-  <img src="./preview/web02.png" alt="image" width="32%" height="auto">
-  <img src="./preview/web02.png" alt="image" width="32%" height="auto">
-  <img src="./preview/web03.png" alt="image" width="32%" height="auto">
+<div style="display: flex; justify-content: space-between;">
+  <img src="./preview/mobile01.png" alt="image" width="33%" height="auto">
+  <img src="./preview/mobile02.png" alt="image" width="33%" height="auto">
+  <img src="./preview/mobile03.png" alt="image" width="33%" height="auto">
 </div>
+
+<img src="./preview/web02.png" alt="image" width="100%" height="auto">
+<img src="./preview/web03.png" alt="image" width="100%" height="auto">
+<img src="./preview/web04.png" alt="image" width="100%" height="auto">
+
