@@ -79,21 +79,21 @@ export const skillsData = [
   },
   {
     title: "TypeScript",
-    label: "interface, type alias, public, private, protected, static",
+    label: "interface, type alias, import/export",
     desc: [
-      "TypeScript를 활용해 웹 어플리케이션을 제작하는 데 익숙합니다.",
+      "React에서 TypeScript를 활용한 정적 타입 검사를 통해 코드의 안정성을 높일 수 있습니다.",
       "때에 따라 interface와 type alias을 적절히 나누어 사용 할 수 있습니다.",
-      "Utility Type들을 활용해 약간 복잡한 Type들을 생성하여 개발할 수 있습니다.",
+      "import export 문법을 사용해 타입 변수를 재사용할 수 있습니다.",
     ],
     logo: [skillTS],
   },
   {
     title: "Next.js",
-    label: "SSR, MongoDB, Routing, AWS",
+    label: "SSR, Routing, Prisma, Spabase, Next-auth",
     desc: [
-      "MongoDB 라이브러리를 사용해 DB 데이터를 저장하고 출력할 수 있습니다.",
-      "Next.js 자동 라우팅 기능을 이용해 페이지 이동이 가능합니다.",
-      "AWS Elastic Beanstalk에 Next.js서버를 배포할 수 있습니다.",
+      "Next.js API Routes, Prisma, Supabase를 이용해 API를 설계하고 데이터베이스 모델링을 학습했습니다.",
+      "Next.js의 pages를 이용한 자동 라우팅 기능, useRouter 훅, Link 컴포넌트를 이용해 페이지 이동이 가능합니다.",
+      "Next-Auth를 이용해 사용자 인증 및 SNS 로그인 기능을 구현할 수 있습니다.",
     ],
     logo: [skillNextjs],
   },
