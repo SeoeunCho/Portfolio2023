@@ -8,6 +8,7 @@ import skillNextjs from "../assets/img/skill_nextjs.png";
 
 import vueSiteVideo from "../assets/videos/vue_site.mp4";
 import twitterSiteVideo from "../assets/videos/twitter_site.mp4";
+import eatmapSiteVideo from "../assets/videos/eatmap_site.mp4";
 import reactSiteVideo from "../assets/videos/react_site.mp4";
 import renewalSite01Video from "../assets/videos/gcimed_site.mp4";
 import renewalSite02Video from "../assets/videos/espoir_site.mp4";
@@ -146,10 +147,10 @@ export const projectsData = [
   {
     title: "맛집 지도 홈페이지 / Next.js SSR 외부 API 사용",
     stack:
-      "Next.js, TypeScript, Tailwind, Prisma, Supabase, Next-auth, React-query, React-hook-form, Recoil, Kakao map API, GoDaddy, Google Analytics, Vercel",
-    video: reactSiteVideo,
-    link: ["demo", "https://github.com/SeoeunCho/next-eatmap"],
-    info: "📍 이 프로젝트는 Next.js 구조 및 SSR 개념을 이해하기 위해 제작한 맛집 지도 프로젝트입니다. Next.js의 API Routes를 기반으로 API를 호출하고 Prisma & Supabase를 통해 직접 API를 설계하고 React Query를 이용해 서버 상태 관리하고 infinite scroll을 이용해 무한 스크롤을 구현했습니다. getStaticProps로 맛집 목록 공공데이터를 가져와 Kakao Map API를 연동하여 지도 위에 마커가 표시되고 클릭하여 상세 정보를 확인할 수 있습니다. Next-Auth를 이용하여 사용자 인증 및 SNS 로그인을 구현했습니다. Recoil을 이용해 키워드 검색 및 정렬, 지도 마커의 상태관리를 처리했습니다. Velcel에 Github 연동하여 자동으로 배포하고 GoDaddy에서 도메인을 연결하고 Google Analytics 적용했습니다. Like API로 찜하기 기능을 설계하고, Comment API로 댓글 기능을 설계하고, Geolocation API로 사용자의 현재 위치를 기반으로 정보를 가져올 수 있습니다. SSR을 구현했습니다. SEO(검색 엔진 최적화)",
+      "Next.js, TypeScript, Tailwind, Prisma, Supabase, React-query, React-hook-form, Recoil",
+    video: eatmapSiteVideo,
+    link: ["https://next-eatmap-five.vercel.app/", "https://github.com/SeoeunCho/next-eatmap"],
+    info: "🍳 이 프로젝트는 Next.js 구조 및 SSR 개념을 이해하기 위해 제작한 맛집 지도 프로젝트입니다. Next.js의 API Routes를 기반으로 API를 호출하고 Prisma & Supabase를 이용해 데이터를 처리했습니다. 전역 상태관리는 Recoil로, 캐싱과 무한 스크롤은 React-Query로 구현했습니다. 맛집 공공데이터를 가져와 Kakao Map API를 연동하여 지도 위에 마커를 표시하고, 클릭하면 상세 정보를 확인할 수 있습니다. Next-Auth로 사용자 인증 및 SNS 로그인을 구현했습니다. Velcel에 Github을 연동하여 자동으로 배포하고 Google Analytics를 적용했습니다. Geolocation API로 사용자의 현재 위치를 기반으로 정보를 가져올 수 있습니다.",
   },
   // {
   //   title: "여행 예약 홈페이지 / React + TypeScript",

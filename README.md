@@ -14,7 +14,7 @@ Career 섹션에서 Notion에 상세히 기록한 경력기술서도 확인할 �
 ## 사용 스택
 
 - React(https://ko.legacy.reactjs.org/) 를 사용하여 사이트를 번들링하고 관리합니다.
-- GSAP(https://greensock.com/gsap) 를 이용하여 패럴랙스 효과를 줍니다.
+- GSAP(https://greensock.com/gsap) 를 이용하여 가로 스크롤, 패럴랙스 효과를 줍니다.
 - Lenis(https://lenis.studiofreight.com/) 를 이용하여 스무스 효과를 구현합니다.
 - Swiper.js(https://swiperjs.com/) 를 사용하여 이미지 슬라이더를 구현합니다.
 - React-Player(https://swiperjs.com/) 를 사용하여 이미지 슬라이더를 구현합니다.
