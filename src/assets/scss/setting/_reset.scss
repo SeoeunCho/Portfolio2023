@@ -34,14 +34,7 @@ img {
 
 /* HTML 초기화 */
 html {
-  // 모바일 수평 스크롤 금지
-  max-width: 100%;
-  overflow-x: hidden;
-
-  //가로 확대 금지 - ios
-  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-
   line-height: 1.15;
 }
 
@@ -178,11 +171,6 @@ body {
 
 body {
   background-color: var(--color-just-black);
-}
-
-/* 모바일 수평 스크롤 방지 */
-html {
-  max-width: 100%;
   overflow-x: hidden;
 }
 
