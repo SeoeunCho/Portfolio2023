@@ -38,6 +38,13 @@ html {
   line-height: 1.15;
 }
 
+/* 모바일 수평 스크롤 금지 */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* 폰트 설정 */
 h1 {
   font-size: 2em;
@@ -171,7 +178,6 @@ body {
 
 body {
   background-color: var(--color-just-black);
-  overflow-x: hidden;
 }
 
 a {
