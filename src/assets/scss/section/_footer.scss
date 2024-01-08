@@ -24,18 +24,22 @@
           background-size: 25px;
           background-position: center center;
           background-repeat: no-repeat;
+          margin-right: 10px;
 
           &:nth-child(1) {
             background-image: url(../../img/icon_github.png);
-            margin-right: 10px;
           }
 
           &:nth-child(2) {
             background-image: url(../../img/icon_notion.png);
-            margin-right: 10px;
           }
 
           &:nth-child(3) {
+            background-size: 30px;
+            background-image: url(../../img/icon_gitbook.png);
+          }
+
+          &:nth-child(4) {
             background-size: 30px;
             background-image: url(../../img/icon_kakaotalk.png);
           }
